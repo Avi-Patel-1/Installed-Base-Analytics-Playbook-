@@ -1,0 +1,35 @@
+{
+  "totalAccounts": 40,
+  "totalEstimatedOpportunity": 26590000,
+  "highPriorityAccounts": 14,
+  "bySegment": {
+    "Strategic enterprise account": {
+      "count": 9,
+      "estimatedOpportunity": 8620000
+    },
+    "Quick win": {
+      "count": 6,
+      "estimatedOpportunity": 4270000
+    },
+    "Modernization candidate": {
+      "count": 12,
+      "estimatedOpportunity": 6620000
+    },
+    "Service-risk account": {
+      "count": 6,
+      "estimatedOpportunity": 3220000
+    },
+    "Data-readiness candidate": {
+      "count": 4,
+      "estimatedOpportunity": 2340000
+    },
+    "Education/nurture account": {
+      "count": 2,
+      "estimatedOpportunity": 1030000
+    },
+    "Low priority": {
+      "count": 1,
+      "estimatedOpportunity": 490000
+    }
+  }
+}

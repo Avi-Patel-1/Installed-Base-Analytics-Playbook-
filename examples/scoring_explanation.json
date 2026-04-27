@@ -1,0 +1,25 @@
+[
+  {
+    "accountId": "IBA-005",
+    "accountName": "Evergreen Tissue Products",
+    "scores": {
+      "lifecycleRisk": {
+        "score": 86,
+        "label": "Critical",
+        "rationale": "Obsolete controls, critical support risk, and a 19-year safety system create high supportability exposure."
+      },
+      "modernizationFit": {
+        "score": 86,
+        "label": "Strong",
+        "rationale": "Budgeted modernization interest and major downtime exposure support a phased modernization conversation."
+      },
+      "technicalConsultingPriority": {
+        "score": 82,
+        "label": "Tier 1",
+        "rationale": "Priority is driven by lifecycle risk, service urgency, modernization fit, and opportunity value."
+      }
+    },
+    "recommendedOpportunityType": "Controls modernization discovery",
+    "nextBestAction": "Map obsolete controls to a phased modernization path tied to uptime and supportability."
+  }
+]

@@ -1,0 +1,4 @@
+rank,accountId,accountName,segment,priorityScore,lifecycleRiskScore,modernizationFitScore,serviceUrgencyScore,dataReadinessScore,confidenceLevel,recommendedOpportunityType,estimatedOpportunitySize,nextBestAction
+1,IBA-005,Evergreen Tissue Products,Strategic enterprise account,82,86,86,89,53,High,Controls modernization discovery,1350000,Map obsolete controls to a phased modernization path tied to uptime and supportability.
+2,IBA-014,Northstar Glass Works,Strategic enterprise account,81,79,86,88,57,High,Controls modernization discovery,1480000,Map obsolete controls to a phased modernization path tied to uptime and supportability.
+3,IBA-018,Ridgeway Bottling,Quick win,76,58,80,77,84,High,Drive health and predictive maintenance,980000,Prioritize a drive health review and identify one critical asset class for monitoring.
