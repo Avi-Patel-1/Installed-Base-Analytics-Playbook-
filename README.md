@@ -6,9 +6,8 @@ The first screen is the working prioritization dashboard. From there, users can 
 
 ## Live Demo
 
-GitHub Pages URL placeholder:
-
 https://avi-patel-1.github.io/Installed-Base-Analytics-Playbook-/
+
 ## Quickstart
 
 ```bash
