@@ -8,8 +8,7 @@ The first screen is the working prioritization dashboard. From there, users can 
 
 GitHub Pages URL placeholder:
 
-`https://<github-user>.github.io/<repository-name>/`
-
+https://avi-patel-1.github.io/Installed-Base-Analytics-Playbook-/
 ## Quickstart
 
 ```bash
