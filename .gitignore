@@ -8,10 +8,14 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+__pycache__
+*.pyc
 dist
 dist-ssr
 package-lock.json
 *.local
+analytics/output/*.sqlite
+analytics/output/*.sqlite-*
 
 # Editor directories and files
 .vscode/*

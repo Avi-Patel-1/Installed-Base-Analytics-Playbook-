@@ -4,6 +4,8 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "analytics:export": "python3 -m analytics",
+    "analytics:test": "python3 -m unittest discover -s tests",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",

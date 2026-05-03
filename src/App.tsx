@@ -703,6 +703,14 @@ function Reports({
   playbook: Playbook
 }) {
   const summary = opportunitySummaryJson(scoredAccounts)
+  const staticAnalytics = [
+    ['Excel-compatible workbook', 'installed_base_analytics_workbook.xml'],
+    ['SQL-scored accounts CSV', 'account_scores.csv'],
+    ['SQL-scored accounts JSON', 'account_scores.json'],
+    ['Opportunity summary JSON', 'opportunity_summary.json'],
+    ['Segment summary CSV', 'segment_summary.csv'],
+    ['Region summary CSV', 'region_summary.csv'],
+  ]
 
   return (
     <section className="stack">
@@ -724,6 +732,17 @@ function Reports({
           <button onClick={() => downloadFile(`${playbook.accountId}-playbook.html`, playbookToHtml(playbook), 'text/html')}>
             Export selected playbook HTML
           </button>
+        </div>
+      </div>
+      <div className="panel">
+        <h3>Generated Analytics Files</h3>
+        <p>These static files are produced by the Python and SQLite export pipeline before the site build.</p>
+        <div className="export-grid">
+          {staticAnalytics.map(([label, fileName]) => (
+            <a key={fileName} href={`${import.meta.env.BASE_URL}analytics/${fileName}`} download>
+              {label}
+            </a>
+          ))}
         </div>
       </div>
       <div className="panel">

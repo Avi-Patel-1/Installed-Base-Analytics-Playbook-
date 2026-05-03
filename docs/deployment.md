@@ -15,6 +15,8 @@ npm run preview
 
 The workflow at `.github/workflows/deploy.yml` runs tests, builds the Vite site, uploads `dist`, and deploys it with GitHub Pages.
 
+The same workflow also runs the Python analytics export before the Vite build. The generated files in `public/analytics/` are copied into `dist/analytics/` as static assets.
+
 Recommended repository settings:
 
 1. Push the project to a GitHub repository.

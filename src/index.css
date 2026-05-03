@@ -57,7 +57,8 @@ button.active,
 .button-row button:first-child,
 .hero-actions button,
 .panel-heading button,
-.export-grid button {
+.export-grid button,
+.export-grid a {
   background: var(--primary);
   border-color: var(--primary);
   color: #ffffff;
@@ -535,6 +536,14 @@ td {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.7rem;
   margin-top: 1rem;
+}
+
+.export-grid a {
+  border: 1px solid var(--primary);
+  border-radius: 7px;
+  padding: 0.6rem 0.85rem;
+  text-align: center;
+  text-decoration: none;
 }
 
 @media (max-width: 1180px) {

@@ -1,0 +1,13 @@
+region,account_count,estimated_opportunity_size,estimated_annual_downtime_cost,average_priority_score,tier_1_2_accounts
+Southeast,6,4580000,7090000,54.2,1
+Northeast,6,3580000,5750000,48.0,0
+Great Lakes,3,2960000,5110000,67.0,3
+Midwest,5,2890000,5540000,52.8,1
+Southwest,3,2500000,4130000,56.7,1
+West,5,2240000,3480000,43.2,0
+Pacific Northwest,2,2040000,3260000,69.0,1
+South Central,2,1200000,1690000,47.5,0
+Plains,2,1110000,1990000,50.0,0
+Mountain,2,990000,1940000,44.5,0
+Mid-Atlantic,2,870000,1570000,44.5,0
+Gulf Coast,2,800000,1220000,43.5,0

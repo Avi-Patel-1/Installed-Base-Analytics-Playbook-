@@ -1,0 +1,1431 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+  <Worksheet ss:Name="Account Scores">
+    <Table>
+      <Row>
+        <Cell><Data ss:Type="String">rank</Data></Cell>
+        <Cell><Data ss:Type="String">account_id</Data></Cell>
+        <Cell><Data ss:Type="String">account_name</Data></Cell>
+        <Cell><Data ss:Type="String">industry_segment</Data></Cell>
+        <Cell><Data ss:Type="String">region</Data></Cell>
+        <Cell><Data ss:Type="String">plant_type</Data></Cell>
+        <Cell><Data ss:Type="String">estimated_opportunity_size</Data></Cell>
+        <Cell><Data ss:Type="String">estimated_annual_downtime_cost</Data></Cell>
+        <Cell><Data ss:Type="String">priority_score</Data></Cell>
+        <Cell><Data ss:Type="String">priority_label</Data></Cell>
+        <Cell><Data ss:Type="String">lifecycle_risk_score</Data></Cell>
+        <Cell><Data ss:Type="String">lifecycle_risk_label</Data></Cell>
+        <Cell><Data ss:Type="String">installed_base_complexity_score</Data></Cell>
+        <Cell><Data ss:Type="String">installed_base_complexity_label</Data></Cell>
+        <Cell><Data ss:Type="String">modernization_fit_score</Data></Cell>
+        <Cell><Data ss:Type="String">modernization_fit_label</Data></Cell>
+        <Cell><Data ss:Type="String">service_urgency_score</Data></Cell>
+        <Cell><Data ss:Type="String">service_urgency_label</Data></Cell>
+        <Cell><Data ss:Type="String">data_readiness_score</Data></Cell>
+        <Cell><Data ss:Type="String">data_readiness_label</Data></Cell>
+        <Cell><Data ss:Type="String">sales_readiness_score</Data></Cell>
+        <Cell><Data ss:Type="String">sales_readiness_label</Data></Cell>
+        <Cell><Data ss:Type="String">confidence_level</Data></Cell>
+        <Cell><Data ss:Type="String">priority_segment</Data></Cell>
+        <Cell><Data ss:Type="String">segment_reason</Data></Cell>
+        <Cell><Data ss:Type="String">opportunity_type</Data></Cell>
+        <Cell><Data ss:Type="String">next_best_action</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="Number">1</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-005</Data></Cell>
+        <Cell><Data ss:Type="String">Evergreen Tissue Products</Data></Cell>
+        <Cell><Data ss:Type="String">Pulp and paper</Data></Cell>
+        <Cell><Data ss:Type="String">Pacific Northwest</Data></Cell>
+        <Cell><Data ss:Type="String">Continuous process</Data></Cell>
+        <Cell><Data ss:Type="Number">1350000</Data></Cell>
+        <Cell><Data ss:Type="Number">2100000</Data></Cell>
+        <Cell><Data ss:Type="Number">78</Data></Cell>
+        <Cell><Data ss:Type="String">Tier 1</Data></Cell>
+        <Cell><Data ss:Type="Number">92</Data></Cell>
+        <Cell><Data ss:Type="String">Critical</Data></Cell>
+        <Cell><Data ss:Type="Number">44</Data></Cell>
+        <Cell><Data ss:Type="String">Focused</Data></Cell>
+        <Cell><Data ss:Type="Number">93</Data></Cell>
+        <Cell><Data ss:Type="String">Strong</Data></Cell>
+        <Cell><Data ss:Type="Number">82</Data></Cell>
+        <Cell><Data ss:Type="String">Immediate</Data></Cell>
+        <Cell><Data ss:Type="Number">57</Data></Cell>
+        <Cell><Data ss:Type="String">Developing</Data></Cell>
+        <Cell><Data ss:Type="Number">76</Data></Cell>
+        <Cell><Data ss:Type="String">Ready</Data></Cell>
+        <Cell><Data ss:Type="String">High</Data></Cell>
+        <Cell><Data ss:Type="String">Quick win</Data></Cell>
+        <Cell><Data ss:Type="String">Strong readiness, visible urgency, and service context support a short-cycle next step.</Data></Cell>
+        <Cell><Data ss:Type="String">Safety lifecycle review</Data></Cell>
+        <Cell><Data ss:Type="String">Start phased modernization and safety lifecycle review</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="Number">2</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-014</Data></Cell>
+        <Cell><Data ss:Type="String">Northstar Glass Works</Data></Cell>
+        <Cell><Data ss:Type="String">Building products</Data></Cell>
+        <Cell><Data ss:Type="String">Great Lakes</Data></Cell>
+        <Cell><Data ss:Type="String">Continuous furnace</Data></Cell>
+        <Cell><Data ss:Type="Number">1480000</Data></Cell>
+        <Cell><Data ss:Type="Number">2350000</Data></Cell>
+        <Cell><Data ss:Type="Number">73</Data></Cell>
+        <Cell><Data ss:Type="String">Tier 2</Data></Cell>
+        <Cell><Data ss:Type="Number">85</Data></Cell>
+        <Cell><Data ss:Type="String">Critical</Data></Cell>
+        <Cell><Data ss:Type="Number">21</Data></Cell>
+        <Cell><Data ss:Type="String">Simple</Data></Cell>
+        <Cell><Data ss:Type="Number">91</Data></Cell>
+        <Cell><Data ss:Type="String">Strong</Data></Cell>
+        <Cell><Data ss:Type="Number">84</Data></Cell>
+        <Cell><Data ss:Type="String">Immediate</Data></Cell>
+        <Cell><Data ss:Type="Number">55</Data></Cell>
+        <Cell><Data ss:Type="String">Needs discovery</Data></Cell>
+        <Cell><Data ss:Type="Number">67</Data></Cell>
+        <Cell><Data ss:Type="String">Developing</Data></Cell>
+        <Cell><Data ss:Type="String">High</Data></Cell>
+        <Cell><Data ss:Type="String">Quick win</Data></Cell>
+        <Cell><Data ss:Type="String">Strong readiness, visible urgency, and service context support a short-cycle next step.</Data></Cell>
+        <Cell><Data ss:Type="String">Safety lifecycle review</Data></Cell>
+        <Cell><Data ss:Type="String">Develop phased modernization scope</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="Number">3</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-018</Data></Cell>
+        <Cell><Data ss:Type="String">Ridgeway Bottling</Data></Cell>
+        <Cell><Data ss:Type="String">Food and beverage</Data></Cell>
+        <Cell><Data ss:Type="String">Southeast</Data></Cell>
+        <Cell><Data ss:Type="String">Beverage bottling</Data></Cell>
+        <Cell><Data ss:Type="Number">980000</Data></Cell>
+        <Cell><Data ss:Type="Number">1750000</Data></Cell>
+        <Cell><Data ss:Type="Number">72</Data></Cell>
+        <Cell><Data ss:Type="String">Tier 2</Data></Cell>
+        <Cell><Data ss:Type="Number">56</Data></Cell>
+        <Cell><Data ss:Type="String">Moderate</Data></Cell>
+        <Cell><Data ss:Type="Number">59</Data></Cell>
+        <Cell><Data ss:Type="String">Scaled</Data></Cell>
+        <Cell><Data ss:Type="Number">80</Data></Cell>
+        <Cell><Data ss:Type="String">Strong</Data></Cell>
+        <Cell><Data ss:Type="Number">76</Data></Cell>
+        <Cell><Data ss:Type="String">Immediate</Data></Cell>
+        <Cell><Data ss:Type="Number">85</Data></Cell>
+        <Cell><Data ss:Type="String">Ready</Data></Cell>
+        <Cell><Data ss:Type="Number">86</Data></Cell>
+        <Cell><Data ss:Type="String">Ready</Data></Cell>
+        <Cell><Data ss:Type="String">High</Data></Cell>
+        <Cell><Data ss:Type="String">Strategic enterprise account</Data></Cell>
+        <Cell><Data ss:Type="String">Large opportunity value and strategic fit justify a roadmap-level conversation.</Data></Cell>
+        <Cell><Data ss:Type="String">Drive health and predictive maintenance</Data></Cell>
+        <Cell><Data ss:Type="String">Build short-cycle reliability proposal</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="Number">4</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-038</Data></Cell>
+        <Cell><Data ss:Type="String">Liberty Pipe and Tube</Data></Cell>
+        <Cell><Data ss:Type="String">Metals</Data></Cell>
+        <Cell><Data ss:Type="String">Great Lakes</Data></Cell>
+        <Cell><Data ss:Type="String">Tube mill</Data></Cell>
+        <Cell><Data ss:Type="Number">860000</Data></Cell>
+        <Cell><Data ss:Type="Number">1780000</Data></Cell>
+        <Cell><Data ss:Type="Number">65</Data></Cell>
+        <Cell><Data ss:Type="String">Tier 2</Data></Cell>
+        <Cell><Data ss:Type="Number">86</Data></Cell>
+        <Cell><Data ss:Type="String">Critical</Data></Cell>
+        <Cell><Data ss:Type="Number">29</Data></Cell>
+        <Cell><Data ss:Type="String">Focused</Data></Cell>
+        <Cell><Data ss:Type="Number">72</Data></Cell>
+        <Cell><Data ss:Type="String">Good</Data></Cell>
+        <Cell><Data ss:Type="Number">83</Data></Cell>
+        <Cell><Data ss:Type="String">Immediate</Data></Cell>
+        <Cell><Data ss:Type="Number">45</Data></Cell>
+        <Cell><Data ss:Type="String">Needs discovery</Data></Cell>
+        <Cell><Data ss:Type="Number">58</Data></Cell>
+        <Cell><Data ss:Type="String">Developing</Data></Cell>
+        <Cell><Data ss:Type="String">Medium</Data></Cell>
+        <Cell><Data ss:Type="String">Service-risk account</Data></Cell>
+        <Cell><Data ss:Type="String">Support exposure and reliability risk are the clearest path into the account.</Data></Cell>
+        <Cell><Data ss:Type="String">Safety lifecycle review</Data></Cell>
+        <Cell><Data ss:Type="String">Confirm evidence quality and account timing</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="Number">5</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-007</Data></Cell>
+        <Cell><Data ss:Type="String">Granite Automotive Stamping</Data></Cell>
+        <Cell><Data ss:Type="String">Automotive</Data></Cell>
+        <Cell><Data ss:Type="String">Midwest</Data></Cell>
+        <Cell><Data ss:Type="String">Stamping</Data></Cell>
+        <Cell><Data ss:Type="Number">840000</Data></Cell>
+        <Cell><Data ss:Type="Number">1860000</Data></Cell>
+        <Cell><Data ss:Type="Number">65</Data></Cell>
+        <Cell><Data ss:Type="String">Tier 2</Data></Cell>
+        <Cell><Data ss:Type="Number">73</Data></Cell>
+        <Cell><Data ss:Type="String">High</Data></Cell>
+        <Cell><Data ss:Type="Number">53</Data></Cell>
+        <Cell><Data ss:Type="String">Scaled</Data></Cell>
+        <Cell><Data ss:Type="Number">69</Data></Cell>
+        <Cell><Data ss:Type="String">Good</Data></Cell>
+        <Cell><Data ss:Type="Number">77</Data></Cell>
+        <Cell><Data ss:Type="String">Immediate</Data></Cell>
+        <Cell><Data ss:Type="Number">50</Data></Cell>
+        <Cell><Data ss:Type="String">Needs discovery</Data></Cell>
+        <Cell><Data ss:Type="Number">58</Data></Cell>
+        <Cell><Data ss:Type="String">Developing</Data></Cell>
+        <Cell><Data ss:Type="String">Medium</Data></Cell>
+        <Cell><Data ss:Type="String">Modernization candidate</Data></Cell>
+        <Cell><Data ss:Type="String">Lifecycle, uptime, or modernization indicators point to a phased upgrade discussion.</Data></Cell>
+        <Cell><Data ss:Type="String">Drive health and predictive maintenance</Data></Cell>
+        <Cell><Data ss:Type="String">Confirm evidence quality and account timing</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="Number">6</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-003</Data></Cell>
+        <Cell><Data ss:Type="String">Canyon Forge Components</Data></Cell>
+        <Cell><Data ss:Type="String">Discrete manufacturing</Data></Cell>
+        <Cell><Data ss:Type="String">Southwest</Data></Cell>
+        <Cell><Data ss:Type="String">Forging and machining</Data></Cell>
+        <Cell><Data ss:Type="Number">920000</Data></Cell>
+        <Cell><Data ss:Type="Number">1620000</Data></Cell>
+        <Cell><Data ss:Type="Number">63</Data></Cell>
+        <Cell><Data ss:Type="String">Tier 2</Data></Cell>
+        <Cell><Data ss:Type="Number">71</Data></Cell>
+        <Cell><Data ss:Type="String">High</Data></Cell>
+        <Cell><Data ss:Type="Number">48</Data></Cell>
+        <Cell><Data ss:Type="String">Scaled</Data></Cell>
+        <Cell><Data ss:Type="Number">78</Data></Cell>
+        <Cell><Data ss:Type="String">Strong</Data></Cell>
+        <Cell><Data ss:Type="Number">63</Data></Cell>
+        <Cell><Data ss:Type="String">Near term</Data></Cell>
+        <Cell><Data ss:Type="Number">47</Data></Cell>
+        <Cell><Data ss:Type="String">Needs discovery</Data></Cell>
+        <Cell><Data ss:Type="Number">57</Data></Cell>
+        <Cell><Data ss:Type="String">Developing</Data></Cell>
+        <Cell><Data ss:Type="String">Medium</Data></Cell>
+        <Cell><Data ss:Type="String">Modernization candidate</Data></Cell>
+        <Cell><Data ss:Type="String">Lifecycle, uptime, or modernization indicators point to a phased upgrade discussion.</Data></Cell>
+        <Cell><Data ss:Type="String">Safety lifecycle review</Data></Cell>
+        <Cell><Data ss:Type="String">Confirm evidence quality and account timing</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="Number">7</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-002</Data></Cell>
+        <Cell><Data ss:Type="String">Blue River Dairy Cooperative</Data></Cell>
+        <Cell><Data ss:Type="String">Food and beverage</Data></Cell>
+        <Cell><Data ss:Type="String">Great Lakes</Data></Cell>
+        <Cell><Data ss:Type="String">Batch processing</Data></Cell>
+        <Cell><Data ss:Type="Number">620000</Data></Cell>
+        <Cell><Data ss:Type="Number">980000</Data></Cell>
+        <Cell><Data ss:Type="Number">63</Data></Cell>
+        <Cell><Data ss:Type="String">Tier 2</Data></Cell>
+        <Cell><Data ss:Type="Number">74</Data></Cell>
+        <Cell><Data ss:Type="String">High</Data></Cell>
+        <Cell><Data ss:Type="Number">17</Data></Cell>
+        <Cell><Data ss:Type="String">Simple</Data></Cell>
+        <Cell><Data ss:Type="Number">73</Data></Cell>
+        <Cell><Data ss:Type="String">Good</Data></Cell>
+        <Cell><Data ss:Type="Number">71</Data></Cell>
+        <Cell><Data ss:Type="String">Near term</Data></Cell>
+        <Cell><Data ss:Type="Number">66</Data></Cell>
+        <Cell><Data ss:Type="String">Developing</Data></Cell>
+        <Cell><Data ss:Type="Number">80</Data></Cell>
+        <Cell><Data ss:Type="String">Ready</Data></Cell>
+        <Cell><Data ss:Type="String">High</Data></Cell>
+        <Cell><Data ss:Type="String">Modernization candidate</Data></Cell>
+        <Cell><Data ss:Type="String">Lifecycle, uptime, or modernization indicators point to a phased upgrade discussion.</Data></Cell>
+        <Cell><Data ss:Type="String">Safety lifecycle review</Data></Cell>
+        <Cell><Data ss:Type="String">Run installed-base lifecycle assessment</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="Number">8</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-039</Data></Cell>
+        <Cell><Data ss:Type="String">Metro Personal Mobility</Data></Cell>
+        <Cell><Data ss:Type="String">Automotive</Data></Cell>
+        <Cell><Data ss:Type="String">Southeast</Data></Cell>
+        <Cell><Data ss:Type="String">Battery module assembly</Data></Cell>
+        <Cell><Data ss:Type="Number">1120000</Data></Cell>
+        <Cell><Data ss:Type="Number">1690000</Data></Cell>
+        <Cell><Data ss:Type="Number">61</Data></Cell>
+        <Cell><Data ss:Type="String">Tier 3</Data></Cell>
+        <Cell><Data ss:Type="Number">30</Data></Cell>
+        <Cell><Data ss:Type="String">Low</Data></Cell>
+        <Cell><Data ss:Type="Number">55</Data></Cell>
+        <Cell><Data ss:Type="String">Scaled</Data></Cell>
+        <Cell><Data ss:Type="Number">67</Data></Cell>
+        <Cell><Data ss:Type="String">Good</Data></Cell>
+        <Cell><Data ss:Type="Number">65</Data></Cell>
+        <Cell><Data ss:Type="String">Near term</Data></Cell>
+        <Cell><Data ss:Type="Number">89</Data></Cell>
+        <Cell><Data ss:Type="String">Ready</Data></Cell>
+        <Cell><Data ss:Type="Number">71</Data></Cell>
+        <Cell><Data ss:Type="String">Developing</Data></Cell>
+        <Cell><Data ss:Type="String">High</Data></Cell>
+        <Cell><Data ss:Type="String">Strategic enterprise account</Data></Cell>
+        <Cell><Data ss:Type="String">Large opportunity value and strategic fit justify a roadmap-level conversation.</Data></Cell>
+        <Cell><Data ss:Type="String">Analytics and edge monitoring</Data></Cell>
+        <Cell><Data ss:Type="String">Build discovery plan and validate business trigger</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="Number">9</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-001</Data></Cell>
+        <Cell><Data ss:Type="String">Apex Packaging Systems</Data></Cell>
+        <Cell><Data ss:Type="String">Food and beverage</Data></Cell>
+        <Cell><Data ss:Type="String">Midwest</Data></Cell>
+        <Cell><Data ss:Type="String">High-speed packaging</Data></Cell>
+        <Cell><Data ss:Type="Number">740000</Data></Cell>
+        <Cell><Data ss:Type="Number">1280000</Data></Cell>
+        <Cell><Data ss:Type="Number">61</Data></Cell>
+        <Cell><Data ss:Type="String">Tier 3</Data></Cell>
+        <Cell><Data ss:Type="Number">53</Data></Cell>
+        <Cell><Data ss:Type="String">Moderate</Data></Cell>
+        <Cell><Data ss:Type="Number">35</Data></Cell>
+        <Cell><Data ss:Type="String">Focused</Data></Cell>
+        <Cell><Data ss:Type="Number">70</Data></Cell>
+        <Cell><Data ss:Type="String">Good</Data></Cell>
+        <Cell><Data ss:Type="Number">69</Data></Cell>
+        <Cell><Data ss:Type="String">Near term</Data></Cell>
+        <Cell><Data ss:Type="Number">78</Data></Cell>
+        <Cell><Data ss:Type="String">Ready</Data></Cell>
+        <Cell><Data ss:Type="Number">71</Data></Cell>
+        <Cell><Data ss:Type="String">Developing</Data></Cell>
+        <Cell><Data ss:Type="String">High</Data></Cell>
+        <Cell><Data ss:Type="String">Data-readiness candidate</Data></Cell>
+        <Cell><Data ss:Type="String">Instrumentation and data availability support a performance pilot or monitoring discussion.</Data></Cell>
+        <Cell><Data ss:Type="String">Analytics and edge monitoring</Data></Cell>
+        <Cell><Data ss:Type="String">Build discovery plan and validate business trigger</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="Number">10</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-037</Data></Cell>
+        <Cell><Data ss:Type="String">Kodiak Frozen Foods</Data></Cell>
+        <Cell><Data ss:Type="String">Food and beverage</Data></Cell>
+        <Cell><Data ss:Type="String">Pacific Northwest</Data></Cell>
+        <Cell><Data ss:Type="String">Frozen processing</Data></Cell>
+        <Cell><Data ss:Type="Number">690000</Data></Cell>
+        <Cell><Data ss:Type="Number">1160000</Data></Cell>
+        <Cell><Data ss:Type="Number">60</Data></Cell>
+        <Cell><Data ss:Type="String">Tier 3</Data></Cell>
+        <Cell><Data ss:Type="Number">53</Data></Cell>
+        <Cell><Data ss:Type="String">Moderate</Data></Cell>
+        <Cell><Data ss:Type="Number">34</Data></Cell>
+        <Cell><Data ss:Type="String">Focused</Data></Cell>
+        <Cell><Data ss:Type="Number">69</Data></Cell>
+        <Cell><Data ss:Type="String">Good</Data></Cell>
+        <Cell><Data ss:Type="Number">67</Data></Cell>
+        <Cell><Data ss:Type="String">Near term</Data></Cell>
+        <Cell><Data ss:Type="Number">70</Data></Cell>
+        <Cell><Data ss:Type="String">Developing</Data></Cell>
+        <Cell><Data ss:Type="Number">80</Data></Cell>
+        <Cell><Data ss:Type="String">Ready</Data></Cell>
+        <Cell><Data ss:Type="String">High</Data></Cell>
+        <Cell><Data ss:Type="String">Modernization candidate</Data></Cell>
+        <Cell><Data ss:Type="String">Lifecycle, uptime, or modernization indicators point to a phased upgrade discussion.</Data></Cell>
+        <Cell><Data ss:Type="String">Short-cycle service opportunity</Data></Cell>
+        <Cell><Data ss:Type="String">Build discovery plan and validate business trigger</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="Number">11</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-024</Data></Cell>
+        <Cell><Data ss:Type="String">Xenia Personal Care</Data></Cell>
+        <Cell><Data ss:Type="String">Consumer packaged goods</Data></Cell>
+        <Cell><Data ss:Type="String">Northeast</Data></Cell>
+        <Cell><Data ss:Type="String">Liquid filling</Data></Cell>
+        <Cell><Data ss:Type="Number">720000</Data></Cell>
+        <Cell><Data ss:Type="Number">1210000</Data></Cell>
+        <Cell><Data ss:Type="Number">59</Data></Cell>
+        <Cell><Data ss:Type="String">Tier 3</Data></Cell>
+        <Cell><Data ss:Type="Number">53</Data></Cell>
+        <Cell><Data ss:Type="String">Moderate</Data></Cell>
+        <Cell><Data ss:Type="Number">45</Data></Cell>
+        <Cell><Data ss:Type="String">Focused</Data></Cell>
+        <Cell><Data ss:Type="Number">65</Data></Cell>
+        <Cell><Data ss:Type="String">Good</Data></Cell>
+        <Cell><Data ss:Type="Number">62</Data></Cell>
+        <Cell><Data ss:Type="String">Near term</Data></Cell>
+        <Cell><Data ss:Type="Number">73</Data></Cell>
+        <Cell><Data ss:Type="String">Developing</Data></Cell>
+        <Cell><Data ss:Type="Number">70</Data></Cell>
+        <Cell><Data ss:Type="String">Developing</Data></Cell>
+        <Cell><Data ss:Type="String">High</Data></Cell>
+        <Cell><Data ss:Type="String">Education/nurture account</Data></Cell>
+        <Cell><Data ss:Type="String">There are useful signals, but more evidence is needed before pursuing a proposal.</Data></Cell>
+        <Cell><Data ss:Type="String">Short-cycle service opportunity</Data></Cell>
+        <Cell><Data ss:Type="String">Build discovery plan and validate business trigger</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="Number">12</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-031</Data></Cell>
+        <Cell><Data ss:Type="String">Eastport Canning Company</Data></Cell>
+        <Cell><Data ss:Type="String">Food and beverage</Data></Cell>
+        <Cell><Data ss:Type="String">Northeast</Data></Cell>
+        <Cell><Data ss:Type="String">Canning</Data></Cell>
+        <Cell><Data ss:Type="Number">590000</Data></Cell>
+        <Cell><Data ss:Type="Number">1050000</Data></Cell>
+        <Cell><Data ss:Type="Number">59</Data></Cell>
+        <Cell><Data ss:Type="String">Tier 3</Data></Cell>
+        <Cell><Data ss:Type="Number">56</Data></Cell>
+        <Cell><Data ss:Type="String">Moderate</Data></Cell>
+        <Cell><Data ss:Type="Number">27</Data></Cell>
+        <Cell><Data ss:Type="String">Simple</Data></Cell>
+        <Cell><Data ss:Type="Number">69</Data></Cell>
+        <Cell><Data ss:Type="String">Good</Data></Cell>
+        <Cell><Data ss:Type="Number">66</Data></Cell>
+        <Cell><Data ss:Type="String">Near term</Data></Cell>
+        <Cell><Data ss:Type="Number">69</Data></Cell>
+        <Cell><Data ss:Type="String">Developing</Data></Cell>
+        <Cell><Data ss:Type="Number">80</Data></Cell>
+        <Cell><Data ss:Type="String">Ready</Data></Cell>
+        <Cell><Data ss:Type="String">High</Data></Cell>
+        <Cell><Data ss:Type="String">Modernization candidate</Data></Cell>
+        <Cell><Data ss:Type="String">Lifecycle, uptime, or modernization indicators point to a phased upgrade discussion.</Data></Cell>
+        <Cell><Data ss:Type="String">Short-cycle service opportunity</Data></Cell>
+        <Cell><Data ss:Type="String">Build discovery plan and validate business trigger</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="Number">13</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-006</Data></Cell>
+        <Cell><Data ss:Type="String">Futura Battery Materials</Data></Cell>
+        <Cell><Data ss:Type="String">Battery and energy storage</Data></Cell>
+        <Cell><Data ss:Type="String">Southeast</Data></Cell>
+        <Cell><Data ss:Type="String">Chemical processing</Data></Cell>
+        <Cell><Data ss:Type="Number">1180000</Data></Cell>
+        <Cell><Data ss:Type="Number">1450000</Data></Cell>
+        <Cell><Data ss:Type="Number">56</Data></Cell>
+        <Cell><Data ss:Type="String">Tier 3</Data></Cell>
+        <Cell><Data ss:Type="Number">29</Data></Cell>
+        <Cell><Data ss:Type="String">Low</Data></Cell>
+        <Cell><Data ss:Type="Number">39</Data></Cell>
+        <Cell><Data ss:Type="String">Focused</Data></Cell>
+        <Cell><Data ss:Type="Number">65</Data></Cell>
+        <Cell><Data ss:Type="String">Good</Data></Cell>
+        <Cell><Data ss:Type="Number">55</Data></Cell>
+        <Cell><Data ss:Type="String">Monitor</Data></Cell>
+        <Cell><Data ss:Type="Number">87</Data></Cell>
+        <Cell><Data ss:Type="String">Ready</Data></Cell>
+        <Cell><Data ss:Type="Number">65</Data></Cell>
+        <Cell><Data ss:Type="String">Developing</Data></Cell>
+        <Cell><Data ss:Type="String">High</Data></Cell>
+        <Cell><Data ss:Type="String">Strategic enterprise account</Data></Cell>
+        <Cell><Data ss:Type="String">Large opportunity value and strategic fit justify a roadmap-level conversation.</Data></Cell>
+        <Cell><Data ss:Type="String">Analytics and edge monitoring</Data></Cell>
+        <Cell><Data ss:Type="String">Build discovery plan and validate business trigger</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="Number">14</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-025</Data></Cell>
+        <Cell><Data ss:Type="String">Yellowstone Mining Products</Data></Cell>
+        <Cell><Data ss:Type="String">Mining and aggregates</Data></Cell>
+        <Cell><Data ss:Type="String">Mountain</Data></Cell>
+        <Cell><Data ss:Type="String">Crushing and screening</Data></Cell>
+        <Cell><Data ss:Type="Number">690000</Data></Cell>
+        <Cell><Data ss:Type="Number">1560000</Data></Cell>
+        <Cell><Data ss:Type="Number">56</Data></Cell>
+        <Cell><Data ss:Type="String">Tier 3</Data></Cell>
+        <Cell><Data ss:Type="Number">77</Data></Cell>
+        <Cell><Data ss:Type="String">High</Data></Cell>
+        <Cell><Data ss:Type="Number">27</Data></Cell>
+        <Cell><Data ss:Type="String">Simple</Data></Cell>
+        <Cell><Data ss:Type="Number">62</Data></Cell>
+        <Cell><Data ss:Type="String">Good</Data></Cell>
+        <Cell><Data ss:Type="Number">80</Data></Cell>
+        <Cell><Data ss:Type="String">Immediate</Data></Cell>
+        <Cell><Data ss:Type="Number">31</Data></Cell>
+        <Cell><Data ss:Type="String">Early</Data></Cell>
+        <Cell><Data ss:Type="Number">45</Data></Cell>
+        <Cell><Data ss:Type="String">Needs discovery</Data></Cell>
+        <Cell><Data ss:Type="String">Medium</Data></Cell>
+        <Cell><Data ss:Type="String">Service-risk account</Data></Cell>
+        <Cell><Data ss:Type="String">Support exposure and reliability risk are the clearest path into the account.</Data></Cell>
+        <Cell><Data ss:Type="String">Safety lifecycle review</Data></Cell>
+        <Cell><Data ss:Type="String">Confirm evidence quality and account timing</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="Number">15</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-017</Data></Cell>
+        <Cell><Data ss:Type="String">Quartz Semiconductor Services</Data></Cell>
+        <Cell><Data ss:Type="String">Electronics</Data></Cell>
+        <Cell><Data ss:Type="String">Southwest</Data></Cell>
+        <Cell><Data ss:Type="String">Cleanroom support systems</Data></Cell>
+        <Cell><Data ss:Type="Number">760000</Data></Cell>
+        <Cell><Data ss:Type="Number">1540000</Data></Cell>
+        <Cell><Data ss:Type="Number">54</Data></Cell>
+        <Cell><Data ss:Type="String">Tier 3</Data></Cell>
+        <Cell><Data ss:Type="Number">29</Data></Cell>
+        <Cell><Data ss:Type="String">Low</Data></Cell>
+        <Cell><Data ss:Type="Number">25</Data></Cell>
+        <Cell><Data ss:Type="String">Simple</Data></Cell>
+        <Cell><Data ss:Type="Number">66</Data></Cell>
+        <Cell><Data ss:Type="String">Good</Data></Cell>
+        <Cell><Data ss:Type="Number">62</Data></Cell>
+        <Cell><Data ss:Type="String">Near term</Data></Cell>
+        <Cell><Data ss:Type="Number">82</Data></Cell>
+        <Cell><Data ss:Type="String">Ready</Data></Cell>
+        <Cell><Data ss:Type="Number">71</Data></Cell>
+        <Cell><Data ss:Type="String">Developing</Data></Cell>
+        <Cell><Data ss:Type="String">High</Data></Cell>
+        <Cell><Data ss:Type="String">Data-readiness candidate</Data></Cell>
+        <Cell><Data ss:Type="String">Instrumentation and data availability support a performance pilot or monitoring discussion.</Data></Cell>
+        <Cell><Data ss:Type="String">Analytics and edge monitoring</Data></Cell>
+        <Cell><Data ss:Type="String">Build discovery plan and validate business trigger</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="Number">16</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-010</Data></Cell>
+        <Cell><Data ss:Type="String">Juniper Consumer Goods</Data></Cell>
+        <Cell><Data ss:Type="String">Consumer packaged goods</Data></Cell>
+        <Cell><Data ss:Type="String">South Central</Data></Cell>
+        <Cell><Data ss:Type="String">Multi-line packaging</Data></Cell>
+        <Cell><Data ss:Type="Number">680000</Data></Cell>
+        <Cell><Data ss:Type="Number">930000</Data></Cell>
+        <Cell><Data ss:Type="Number">54</Data></Cell>
+        <Cell><Data ss:Type="String">Tier 3</Data></Cell>
+        <Cell><Data ss:Type="Number">25</Data></Cell>
+        <Cell><Data ss:Type="String">Low</Data></Cell>
+        <Cell><Data ss:Type="Number">61</Data></Cell>
+        <Cell><Data ss:Type="String">Scaled</Data></Cell>
+        <Cell><Data ss:Type="Number">58</Data></Cell>
+        <Cell><Data ss:Type="String">Good</Data></Cell>
+        <Cell><Data ss:Type="Number">48</Data></Cell>
+        <Cell><Data ss:Type="String">Monitor</Data></Cell>
+        <Cell><Data ss:Type="Number">83</Data></Cell>
+        <Cell><Data ss:Type="String">Ready</Data></Cell>
+        <Cell><Data ss:Type="Number">75</Data></Cell>
+        <Cell><Data ss:Type="String">Developing</Data></Cell>
+        <Cell><Data ss:Type="String">High</Data></Cell>
+        <Cell><Data ss:Type="String">Data-readiness candidate</Data></Cell>
+        <Cell><Data ss:Type="String">Instrumentation and data availability support a performance pilot or monitoring discussion.</Data></Cell>
+        <Cell><Data ss:Type="String">Analytics and edge monitoring</Data></Cell>
+        <Cell><Data ss:Type="String">Build discovery plan and validate business trigger</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="Number">17</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-026</Data></Cell>
+        <Cell><Data ss:Type="String">Zenith Solar Fabrication</Data></Cell>
+        <Cell><Data ss:Type="String">Renewable energy</Data></Cell>
+        <Cell><Data ss:Type="String">Southwest</Data></Cell>
+        <Cell><Data ss:Type="String">Panel assembly</Data></Cell>
+        <Cell><Data ss:Type="Number">820000</Data></Cell>
+        <Cell><Data ss:Type="Number">970000</Data></Cell>
+        <Cell><Data ss:Type="Number">53</Data></Cell>
+        <Cell><Data ss:Type="String">Tier 3</Data></Cell>
+        <Cell><Data ss:Type="Number">26</Data></Cell>
+        <Cell><Data ss:Type="String">Low</Data></Cell>
+        <Cell><Data ss:Type="Number">40</Data></Cell>
+        <Cell><Data ss:Type="String">Focused</Data></Cell>
+        <Cell><Data ss:Type="Number">59</Data></Cell>
+        <Cell><Data ss:Type="String">Good</Data></Cell>
+        <Cell><Data ss:Type="Number">54</Data></Cell>
+        <Cell><Data ss:Type="String">Monitor</Data></Cell>
+        <Cell><Data ss:Type="Number">83</Data></Cell>
+        <Cell><Data ss:Type="String">Ready</Data></Cell>
+        <Cell><Data ss:Type="Number">71</Data></Cell>
+        <Cell><Data ss:Type="String">Developing</Data></Cell>
+        <Cell><Data ss:Type="String">High</Data></Cell>
+        <Cell><Data ss:Type="String">Strategic enterprise account</Data></Cell>
+        <Cell><Data ss:Type="String">Large opportunity value and strategic fit justify a roadmap-level conversation.</Data></Cell>
+        <Cell><Data ss:Type="String">Analytics and edge monitoring</Data></Cell>
+        <Cell><Data ss:Type="String">Build discovery plan and validate business trigger</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="Number">18</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-016</Data></Cell>
+        <Cell><Data ss:Type="String">Prairie Grain Milling</Data></Cell>
+        <Cell><Data ss:Type="String">Food and beverage</Data></Cell>
+        <Cell><Data ss:Type="String">Plains</Data></Cell>
+        <Cell><Data ss:Type="String">Milling</Data></Cell>
+        <Cell><Data ss:Type="Number">640000</Data></Cell>
+        <Cell><Data ss:Type="Number">1180000</Data></Cell>
+        <Cell><Data ss:Type="Number">53</Data></Cell>
+        <Cell><Data ss:Type="String">Tier 3</Data></Cell>
+        <Cell><Data ss:Type="Number">86</Data></Cell>
+        <Cell><Data ss:Type="String">Critical</Data></Cell>
+        <Cell><Data ss:Type="Number">29</Data></Cell>
+        <Cell><Data ss:Type="String">Focused</Data></Cell>
+        <Cell><Data ss:Type="Number">50</Data></Cell>
+        <Cell><Data ss:Type="String">Emerging</Data></Cell>
+        <Cell><Data ss:Type="Number">74</Data></Cell>
+        <Cell><Data ss:Type="String">Near term</Data></Cell>
+        <Cell><Data ss:Type="Number">24</Data></Cell>
+        <Cell><Data ss:Type="String">Early</Data></Cell>
+        <Cell><Data ss:Type="Number">41</Data></Cell>
+        <Cell><Data ss:Type="String">Needs discovery</Data></Cell>
+        <Cell><Data ss:Type="String">Low</Data></Cell>
+        <Cell><Data ss:Type="String">Service-risk account</Data></Cell>
+        <Cell><Data ss:Type="String">Support exposure and reliability risk are the clearest path into the account.</Data></Cell>
+        <Cell><Data ss:Type="String">Safety lifecycle review</Data></Cell>
+        <Cell><Data ss:Type="String">Confirm evidence quality and account timing</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="Number">19</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-009</Data></Cell>
+        <Cell><Data ss:Type="String">Ironwood Metals Recycling</Data></Cell>
+        <Cell><Data ss:Type="String">Metals</Data></Cell>
+        <Cell><Data ss:Type="String">Mid-Atlantic</Data></Cell>
+        <Cell><Data ss:Type="String">Material handling</Data></Cell>
+        <Cell><Data ss:Type="Number">560000</Data></Cell>
+        <Cell><Data ss:Type="Number">1120000</Data></Cell>
+        <Cell><Data ss:Type="Number">53</Data></Cell>
+        <Cell><Data ss:Type="String">Tier 3</Data></Cell>
+        <Cell><Data ss:Type="Number">82</Data></Cell>
+        <Cell><Data ss:Type="String">Critical</Data></Cell>
+        <Cell><Data ss:Type="Number">39</Data></Cell>
+        <Cell><Data ss:Type="String">Focused</Data></Cell>
+        <Cell><Data ss:Type="Number">48</Data></Cell>
+        <Cell><Data ss:Type="String">Emerging</Data></Cell>
+        <Cell><Data ss:Type="Number">73</Data></Cell>
+        <Cell><Data ss:Type="String">Near term</Data></Cell>
+        <Cell><Data ss:Type="Number">32</Data></Cell>
+        <Cell><Data ss:Type="String">Early</Data></Cell>
+        <Cell><Data ss:Type="Number">33</Data></Cell>
+        <Cell><Data ss:Type="String">Early</Data></Cell>
+        <Cell><Data ss:Type="String">Medium</Data></Cell>
+        <Cell><Data ss:Type="String">Service-risk account</Data></Cell>
+        <Cell><Data ss:Type="String">Support exposure and reliability risk are the clearest path into the account.</Data></Cell>
+        <Cell><Data ss:Type="String">Safety lifecycle review</Data></Cell>
+        <Cell><Data ss:Type="String">Confirm evidence quality and account timing</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="Number">20</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-012</Data></Cell>
+        <Cell><Data ss:Type="String">Lakeside Specialty Chemicals</Data></Cell>
+        <Cell><Data ss:Type="String">Chemicals</Data></Cell>
+        <Cell><Data ss:Type="String">Gulf Coast</Data></Cell>
+        <Cell><Data ss:Type="String">Batch and blending</Data></Cell>
+        <Cell><Data ss:Type="Number">610000</Data></Cell>
+        <Cell><Data ss:Type="Number">890000</Data></Cell>
+        <Cell><Data ss:Type="Number">52</Data></Cell>
+        <Cell><Data ss:Type="String">Tier 3</Data></Cell>
+        <Cell><Data ss:Type="Number">55</Data></Cell>
+        <Cell><Data ss:Type="String">Moderate</Data></Cell>
+        <Cell><Data ss:Type="Number">20</Data></Cell>
+        <Cell><Data ss:Type="String">Simple</Data></Cell>
+        <Cell><Data ss:Type="Number">62</Data></Cell>
+        <Cell><Data ss:Type="String">Good</Data></Cell>
+        <Cell><Data ss:Type="Number">57</Data></Cell>
+        <Cell><Data ss:Type="String">Near term</Data></Cell>
+        <Cell><Data ss:Type="Number">64</Data></Cell>
+        <Cell><Data ss:Type="String">Developing</Data></Cell>
+        <Cell><Data ss:Type="Number">60</Data></Cell>
+        <Cell><Data ss:Type="String">Developing</Data></Cell>
+        <Cell><Data ss:Type="String">Medium</Data></Cell>
+        <Cell><Data ss:Type="String">Education/nurture account</Data></Cell>
+        <Cell><Data ss:Type="String">There are useful signals, but more evidence is needed before pursuing a proposal.</Data></Cell>
+        <Cell><Data ss:Type="String">Short-cycle service opportunity</Data></Cell>
+        <Cell><Data ss:Type="String">Build discovery plan and validate business trigger</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="Number">21</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-022</Data></Cell>
+        <Cell><Data ss:Type="String">Valley Fresh Produce</Data></Cell>
+        <Cell><Data ss:Type="String">Food and beverage</Data></Cell>
+        <Cell><Data ss:Type="String">West</Data></Cell>
+        <Cell><Data ss:Type="String">Sorting and packaging</Data></Cell>
+        <Cell><Data ss:Type="Number">540000</Data></Cell>
+        <Cell><Data ss:Type="Number">880000</Data></Cell>
+        <Cell><Data ss:Type="Number">51</Data></Cell>
+        <Cell><Data ss:Type="String">Tier 3</Data></Cell>
+        <Cell><Data ss:Type="Number">37</Data></Cell>
+        <Cell><Data ss:Type="String">Moderate</Data></Cell>
+        <Cell><Data ss:Type="Number">53</Data></Cell>
+        <Cell><Data ss:Type="String">Scaled</Data></Cell>
+        <Cell><Data ss:Type="Number">57</Data></Cell>
+        <Cell><Data ss:Type="String">Good</Data></Cell>
+        <Cell><Data ss:Type="Number">48</Data></Cell>
+        <Cell><Data ss:Type="String">Monitor</Data></Cell>
+        <Cell><Data ss:Type="Number">79</Data></Cell>
+        <Cell><Data ss:Type="String">Ready</Data></Cell>
+        <Cell><Data ss:Type="Number">51</Data></Cell>
+        <Cell><Data ss:Type="String">Needs discovery</Data></Cell>
+        <Cell><Data ss:Type="String">High</Data></Cell>
+        <Cell><Data ss:Type="String">Education/nurture account</Data></Cell>
+        <Cell><Data ss:Type="String">There are useful signals, but more evidence is needed before pursuing a proposal.</Data></Cell>
+        <Cell><Data ss:Type="String">Analytics and edge monitoring</Data></Cell>
+        <Cell><Data ss:Type="String">Build discovery plan and validate business trigger</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="Number">22</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-034</Data></Cell>
+        <Cell><Data ss:Type="String">Helix Bioprocessing</Data></Cell>
+        <Cell><Data ss:Type="String">Life sciences</Data></Cell>
+        <Cell><Data ss:Type="String">Northeast</Data></Cell>
+        <Cell><Data ss:Type="String">Bioreactor suite</Data></Cell>
+        <Cell><Data ss:Type="Number">940000</Data></Cell>
+        <Cell><Data ss:Type="Number">1370000</Data></Cell>
+        <Cell><Data ss:Type="Number">49</Data></Cell>
+        <Cell><Data ss:Type="String">Tier 3</Data></Cell>
+        <Cell><Data ss:Type="Number">19</Data></Cell>
+        <Cell><Data ss:Type="String">Low</Data></Cell>
+        <Cell><Data ss:Type="Number">27</Data></Cell>
+        <Cell><Data ss:Type="String">Simple</Data></Cell>
+        <Cell><Data ss:Type="Number">61</Data></Cell>
+        <Cell><Data ss:Type="String">Good</Data></Cell>
+        <Cell><Data ss:Type="Number">45</Data></Cell>
+        <Cell><Data ss:Type="String">Monitor</Data></Cell>
+        <Cell><Data ss:Type="Number">86</Data></Cell>
+        <Cell><Data ss:Type="String">Ready</Data></Cell>
+        <Cell><Data ss:Type="Number">65</Data></Cell>
+        <Cell><Data ss:Type="String">Developing</Data></Cell>
+        <Cell><Data ss:Type="String">High</Data></Cell>
+        <Cell><Data ss:Type="String">Strategic enterprise account</Data></Cell>
+        <Cell><Data ss:Type="String">Large opportunity value and strategic fit justify a roadmap-level conversation.</Data></Cell>
+        <Cell><Data ss:Type="String">Analytics and edge monitoring</Data></Cell>
+        <Cell><Data ss:Type="String">Build discovery plan and validate business trigger</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="Number">23</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-036</Data></Cell>
+        <Cell><Data ss:Type="String">Jade Electronics Assembly</Data></Cell>
+        <Cell><Data ss:Type="String">Electronics</Data></Cell>
+        <Cell><Data ss:Type="String">West</Data></Cell>
+        <Cell><Data ss:Type="String">Surface mount assembly</Data></Cell>
+        <Cell><Data ss:Type="Number">650000</Data></Cell>
+        <Cell><Data ss:Type="Number">820000</Data></Cell>
+        <Cell><Data ss:Type="Number">49</Data></Cell>
+        <Cell><Data ss:Type="String">Tier 3</Data></Cell>
+        <Cell><Data ss:Type="Number">16</Data></Cell>
+        <Cell><Data ss:Type="String">Low</Data></Cell>
+        <Cell><Data ss:Type="Number">50</Data></Cell>
+        <Cell><Data ss:Type="String">Scaled</Data></Cell>
+        <Cell><Data ss:Type="Number">50</Data></Cell>
+        <Cell><Data ss:Type="String">Emerging</Data></Cell>
+        <Cell><Data ss:Type="Number">43</Data></Cell>
+        <Cell><Data ss:Type="String">Monitor</Data></Cell>
+        <Cell><Data ss:Type="Number">88</Data></Cell>
+        <Cell><Data ss:Type="String">Ready</Data></Cell>
+        <Cell><Data ss:Type="Number">76</Data></Cell>
+        <Cell><Data ss:Type="String">Ready</Data></Cell>
+        <Cell><Data ss:Type="String">High</Data></Cell>
+        <Cell><Data ss:Type="String">Education/nurture account</Data></Cell>
+        <Cell><Data ss:Type="String">There are useful signals, but more evidence is needed before pursuing a proposal.</Data></Cell>
+        <Cell><Data ss:Type="String">Analytics and edge monitoring</Data></Cell>
+        <Cell><Data ss:Type="String">Build discovery plan and validate business trigger</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="Number">24</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-040</Data></Cell>
+        <Cell><Data ss:Type="String">Norwood Specialty Textiles</Data></Cell>
+        <Cell><Data ss:Type="String">Textiles</Data></Cell>
+        <Cell><Data ss:Type="String">Southeast</Data></Cell>
+        <Cell><Data ss:Type="String">Coating and winding</Data></Cell>
+        <Cell><Data ss:Type="Number">520000</Data></Cell>
+        <Cell><Data ss:Type="Number">870000</Data></Cell>
+        <Cell><Data ss:Type="Number">49</Data></Cell>
+        <Cell><Data ss:Type="String">Tier 3</Data></Cell>
+        <Cell><Data ss:Type="Number">66</Data></Cell>
+        <Cell><Data ss:Type="String">High</Data></Cell>
+        <Cell><Data ss:Type="Number">28</Data></Cell>
+        <Cell><Data ss:Type="String">Focused</Data></Cell>
+        <Cell><Data ss:Type="Number">52</Data></Cell>
+        <Cell><Data ss:Type="String">Emerging</Data></Cell>
+        <Cell><Data ss:Type="Number">57</Data></Cell>
+        <Cell><Data ss:Type="String">Near term</Data></Cell>
+        <Cell><Data ss:Type="Number">45</Data></Cell>
+        <Cell><Data ss:Type="String">Needs discovery</Data></Cell>
+        <Cell><Data ss:Type="Number">45</Data></Cell>
+        <Cell><Data ss:Type="String">Needs discovery</Data></Cell>
+        <Cell><Data ss:Type="String">Medium</Data></Cell>
+        <Cell><Data ss:Type="String">Modernization candidate</Data></Cell>
+        <Cell><Data ss:Type="String">Lifecycle, uptime, or modernization indicators point to a phased upgrade discussion.</Data></Cell>
+        <Cell><Data ss:Type="String">Safety lifecycle review</Data></Cell>
+        <Cell><Data ss:Type="String">Confirm evidence quality and account timing</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="Number">25</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-004</Data></Cell>
+        <Cell><Data ss:Type="String">Delta Plastics Group</Data></Cell>
+        <Cell><Data ss:Type="String">Plastics and rubber</Data></Cell>
+        <Cell><Data ss:Type="String">Southeast</Data></Cell>
+        <Cell><Data ss:Type="String">Injection molding</Data></Cell>
+        <Cell><Data ss:Type="Number">510000</Data></Cell>
+        <Cell><Data ss:Type="Number">720000</Data></Cell>
+        <Cell><Data ss:Type="Number">49</Data></Cell>
+        <Cell><Data ss:Type="String">Tier 3</Data></Cell>
+        <Cell><Data ss:Type="Number">40</Data></Cell>
+        <Cell><Data ss:Type="String">Moderate</Data></Cell>
+        <Cell><Data ss:Type="Number">63</Data></Cell>
+        <Cell><Data ss:Type="String">Scaled</Data></Cell>
+        <Cell><Data ss:Type="Number">48</Data></Cell>
+        <Cell><Data ss:Type="String">Emerging</Data></Cell>
+        <Cell><Data ss:Type="Number">45</Data></Cell>
+        <Cell><Data ss:Type="String">Monitor</Data></Cell>
+        <Cell><Data ss:Type="Number">67</Data></Cell>
+        <Cell><Data ss:Type="String">Developing</Data></Cell>
+        <Cell><Data ss:Type="Number">52</Data></Cell>
+        <Cell><Data ss:Type="String">Needs discovery</Data></Cell>
+        <Cell><Data ss:Type="String">Medium</Data></Cell>
+        <Cell><Data ss:Type="String">Education/nurture account</Data></Cell>
+        <Cell><Data ss:Type="String">There are useful signals, but more evidence is needed before pursuing a proposal.</Data></Cell>
+        <Cell><Data ss:Type="String">Assessment workshop</Data></Cell>
+        <Cell><Data ss:Type="String">Build discovery plan and validate business trigger</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="Number">26</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-035</Data></Cell>
+        <Cell><Data ss:Type="String">Inland Corrugated Packaging</Data></Cell>
+        <Cell><Data ss:Type="String">Pulp and paper</Data></Cell>
+        <Cell><Data ss:Type="String">Midwest</Data></Cell>
+        <Cell><Data ss:Type="String">Corrugating</Data></Cell>
+        <Cell><Data ss:Type="Number">550000</Data></Cell>
+        <Cell><Data ss:Type="Number">990000</Data></Cell>
+        <Cell><Data ss:Type="Number">48</Data></Cell>
+        <Cell><Data ss:Type="String">Tier 3</Data></Cell>
+        <Cell><Data ss:Type="Number">67</Data></Cell>
+        <Cell><Data ss:Type="String">High</Data></Cell>
+        <Cell><Data ss:Type="Number">30</Data></Cell>
+        <Cell><Data ss:Type="String">Focused</Data></Cell>
+        <Cell><Data ss:Type="Number">53</Data></Cell>
+        <Cell><Data ss:Type="String">Emerging</Data></Cell>
+        <Cell><Data ss:Type="Number">54</Data></Cell>
+        <Cell><Data ss:Type="String">Monitor</Data></Cell>
+        <Cell><Data ss:Type="Number">47</Data></Cell>
+        <Cell><Data ss:Type="String">Needs discovery</Data></Cell>
+        <Cell><Data ss:Type="Number">37</Data></Cell>
+        <Cell><Data ss:Type="String">Needs discovery</Data></Cell>
+        <Cell><Data ss:Type="String">Medium</Data></Cell>
+        <Cell><Data ss:Type="String">Modernization candidate</Data></Cell>
+        <Cell><Data ss:Type="String">Lifecycle, uptime, or modernization indicators point to a phased upgrade discussion.</Data></Cell>
+        <Cell><Data ss:Type="String">Safety lifecycle review</Data></Cell>
+        <Cell><Data ss:Type="String">Confirm evidence quality and account timing</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="Number">27</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-028</Data></Cell>
+        <Cell><Data ss:Type="String">Beacon Specialty Foods</Data></Cell>
+        <Cell><Data ss:Type="String">Food and beverage</Data></Cell>
+        <Cell><Data ss:Type="String">Northeast</Data></Cell>
+        <Cell><Data ss:Type="String">Ready-to-eat meals</Data></Cell>
+        <Cell><Data ss:Type="Number">520000</Data></Cell>
+        <Cell><Data ss:Type="Number">790000</Data></Cell>
+        <Cell><Data ss:Type="Number">48</Data></Cell>
+        <Cell><Data ss:Type="String">Tier 3</Data></Cell>
+        <Cell><Data ss:Type="Number">25</Data></Cell>
+        <Cell><Data ss:Type="String">Low</Data></Cell>
+        <Cell><Data ss:Type="Number">37</Data></Cell>
+        <Cell><Data ss:Type="String">Focused</Data></Cell>
+        <Cell><Data ss:Type="Number">52</Data></Cell>
+        <Cell><Data ss:Type="String">Emerging</Data></Cell>
+        <Cell><Data ss:Type="Number">46</Data></Cell>
+        <Cell><Data ss:Type="String">Monitor</Data></Cell>
+        <Cell><Data ss:Type="Number">81</Data></Cell>
+        <Cell><Data ss:Type="String">Ready</Data></Cell>
+        <Cell><Data ss:Type="Number">76</Data></Cell>
+        <Cell><Data ss:Type="String">Ready</Data></Cell>
+        <Cell><Data ss:Type="String">High</Data></Cell>
+        <Cell><Data ss:Type="String">Education/nurture account</Data></Cell>
+        <Cell><Data ss:Type="String">There are useful signals, but more evidence is needed before pursuing a proposal.</Data></Cell>
+        <Cell><Data ss:Type="String">Analytics and edge monitoring</Data></Cell>
+        <Cell><Data ss:Type="String">Build discovery plan and validate business trigger</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="Number">28</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-013</Data></Cell>
+        <Cell><Data ss:Type="String">Monarch Snack Foods</Data></Cell>
+        <Cell><Data ss:Type="String">Food and beverage</Data></Cell>
+        <Cell><Data ss:Type="String">West</Data></Cell>
+        <Cell><Data ss:Type="String">Snack processing</Data></Cell>
+        <Cell><Data ss:Type="Number">430000</Data></Cell>
+        <Cell><Data ss:Type="Number">840000</Data></Cell>
+        <Cell><Data ss:Type="Number">48</Data></Cell>
+        <Cell><Data ss:Type="String">Tier 3</Data></Cell>
+        <Cell><Data ss:Type="Number">66</Data></Cell>
+        <Cell><Data ss:Type="String">High</Data></Cell>
+        <Cell><Data ss:Type="Number">31</Data></Cell>
+        <Cell><Data ss:Type="String">Focused</Data></Cell>
+        <Cell><Data ss:Type="Number">51</Data></Cell>
+        <Cell><Data ss:Type="String">Emerging</Data></Cell>
+        <Cell><Data ss:Type="Number">57</Data></Cell>
+        <Cell><Data ss:Type="String">Near term</Data></Cell>
+        <Cell><Data ss:Type="Number">35</Data></Cell>
+        <Cell><Data ss:Type="String">Early</Data></Cell>
+        <Cell><Data ss:Type="Number">45</Data></Cell>
+        <Cell><Data ss:Type="String">Needs discovery</Data></Cell>
+        <Cell><Data ss:Type="String">Medium</Data></Cell>
+        <Cell><Data ss:Type="String">Modernization candidate</Data></Cell>
+        <Cell><Data ss:Type="String">Lifecycle, uptime, or modernization indicators point to a phased upgrade discussion.</Data></Cell>
+        <Cell><Data ss:Type="String">Safety lifecycle review</Data></Cell>
+        <Cell><Data ss:Type="String">Confirm evidence quality and account timing</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="Number">29</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-020</Data></Cell>
+        <Cell><Data ss:Type="String">Terra Agri Nutrients</Data></Cell>
+        <Cell><Data ss:Type="String">Chemicals</Data></Cell>
+        <Cell><Data ss:Type="String">Plains</Data></Cell>
+        <Cell><Data ss:Type="String">Fertilizer blending</Data></Cell>
+        <Cell><Data ss:Type="Number">470000</Data></Cell>
+        <Cell><Data ss:Type="Number">810000</Data></Cell>
+        <Cell><Data ss:Type="Number">47</Data></Cell>
+        <Cell><Data ss:Type="String">Tier 3</Data></Cell>
+        <Cell><Data ss:Type="Number">55</Data></Cell>
+        <Cell><Data ss:Type="String">Moderate</Data></Cell>
+        <Cell><Data ss:Type="Number">23</Data></Cell>
+        <Cell><Data ss:Type="String">Simple</Data></Cell>
+        <Cell><Data ss:Type="Number">48</Data></Cell>
+        <Cell><Data ss:Type="String">Emerging</Data></Cell>
+        <Cell><Data ss:Type="Number">62</Data></Cell>
+        <Cell><Data ss:Type="String">Near term</Data></Cell>
+        <Cell><Data ss:Type="Number">45</Data></Cell>
+        <Cell><Data ss:Type="String">Needs discovery</Data></Cell>
+        <Cell><Data ss:Type="Number">51</Data></Cell>
+        <Cell><Data ss:Type="String">Needs discovery</Data></Cell>
+        <Cell><Data ss:Type="String">Medium</Data></Cell>
+        <Cell><Data ss:Type="String">Education/nurture account</Data></Cell>
+        <Cell><Data ss:Type="String">There are useful signals, but more evidence is needed before pursuing a proposal.</Data></Cell>
+        <Cell><Data ss:Type="String">Short-cycle service opportunity</Data></Cell>
+        <Cell><Data ss:Type="String">Confirm evidence quality and account timing</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="Number">30</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-011</Data></Cell>
+        <Cell><Data ss:Type="String">Keystone Appliance Assembly</Data></Cell>
+        <Cell><Data ss:Type="String">Discrete manufacturing</Data></Cell>
+        <Cell><Data ss:Type="String">Midwest</Data></Cell>
+        <Cell><Data ss:Type="String">Assembly</Data></Cell>
+        <Cell><Data ss:Type="Number">480000</Data></Cell>
+        <Cell><Data ss:Type="Number">760000</Data></Cell>
+        <Cell><Data ss:Type="Number">46</Data></Cell>
+        <Cell><Data ss:Type="String">Tier 3</Data></Cell>
+        <Cell><Data ss:Type="Number">41</Data></Cell>
+        <Cell><Data ss:Type="String">Moderate</Data></Cell>
+        <Cell><Data ss:Type="Number">38</Data></Cell>
+        <Cell><Data ss:Type="String">Focused</Data></Cell>
+        <Cell><Data ss:Type="Number">48</Data></Cell>
+        <Cell><Data ss:Type="String">Emerging</Data></Cell>
+        <Cell><Data ss:Type="Number">45</Data></Cell>
+        <Cell><Data ss:Type="String">Monitor</Data></Cell>
+        <Cell><Data ss:Type="Number">73</Data></Cell>
+        <Cell><Data ss:Type="String">Developing</Data></Cell>
+        <Cell><Data ss:Type="Number">52</Data></Cell>
+        <Cell><Data ss:Type="String">Needs discovery</Data></Cell>
+        <Cell><Data ss:Type="String">High</Data></Cell>
+        <Cell><Data ss:Type="String">Education/nurture account</Data></Cell>
+        <Cell><Data ss:Type="String">There are useful signals, but more evidence is needed before pursuing a proposal.</Data></Cell>
+        <Cell><Data ss:Type="String">Assessment workshop</Data></Cell>
+        <Cell><Data ss:Type="String">Build discovery plan and validate business trigger</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="Number">31</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-027</Data></Cell>
+        <Cell><Data ss:Type="String">Atlas Metal Finishing</Data></Cell>
+        <Cell><Data ss:Type="String">Metals</Data></Cell>
+        <Cell><Data ss:Type="String">Midwest</Data></Cell>
+        <Cell><Data ss:Type="String">Coating and finishing</Data></Cell>
+        <Cell><Data ss:Type="Number">280000</Data></Cell>
+        <Cell><Data ss:Type="Number">650000</Data></Cell>
+        <Cell><Data ss:Type="Number">44</Data></Cell>
+        <Cell><Data ss:Type="String">Tier 3</Data></Cell>
+        <Cell><Data ss:Type="Number">83</Data></Cell>
+        <Cell><Data ss:Type="String">Critical</Data></Cell>
+        <Cell><Data ss:Type="Number">19</Data></Cell>
+        <Cell><Data ss:Type="String">Simple</Data></Cell>
+        <Cell><Data ss:Type="Number">37</Data></Cell>
+        <Cell><Data ss:Type="String">Emerging</Data></Cell>
+        <Cell><Data ss:Type="Number">67</Data></Cell>
+        <Cell><Data ss:Type="String">Near term</Data></Cell>
+        <Cell><Data ss:Type="Number">22</Data></Cell>
+        <Cell><Data ss:Type="String">Early</Data></Cell>
+        <Cell><Data ss:Type="Number">33</Data></Cell>
+        <Cell><Data ss:Type="String">Early</Data></Cell>
+        <Cell><Data ss:Type="String">Low</Data></Cell>
+        <Cell><Data ss:Type="String">Service-risk account</Data></Cell>
+        <Cell><Data ss:Type="String">Support exposure and reliability risk are the clearest path into the account.</Data></Cell>
+        <Cell><Data ss:Type="String">Safety lifecycle review</Data></Cell>
+        <Cell><Data ss:Type="String">Confirm evidence quality and account timing</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="Number">32</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-021</Data></Cell>
+        <Cell><Data ss:Type="String">Union Rail Car Systems</Data></Cell>
+        <Cell><Data ss:Type="String">Transportation equipment</Data></Cell>
+        <Cell><Data ss:Type="String">South Central</Data></Cell>
+        <Cell><Data ss:Type="String">Heavy fabrication</Data></Cell>
+        <Cell><Data ss:Type="Number">520000</Data></Cell>
+        <Cell><Data ss:Type="Number">760000</Data></Cell>
+        <Cell><Data ss:Type="Number">41</Data></Cell>
+        <Cell><Data ss:Type="String">Monitor</Data></Cell>
+        <Cell><Data ss:Type="Number">66</Data></Cell>
+        <Cell><Data ss:Type="String">High</Data></Cell>
+        <Cell><Data ss:Type="Number">27</Data></Cell>
+        <Cell><Data ss:Type="String">Simple</Data></Cell>
+        <Cell><Data ss:Type="Number">40</Data></Cell>
+        <Cell><Data ss:Type="String">Emerging</Data></Cell>
+        <Cell><Data ss:Type="Number">50</Data></Cell>
+        <Cell><Data ss:Type="String">Monitor</Data></Cell>
+        <Cell><Data ss:Type="Number">26</Data></Cell>
+        <Cell><Data ss:Type="String">Early</Data></Cell>
+        <Cell><Data ss:Type="Number">27</Data></Cell>
+        <Cell><Data ss:Type="String">Early</Data></Cell>
+        <Cell><Data ss:Type="String">Low</Data></Cell>
+        <Cell><Data ss:Type="String">Modernization candidate</Data></Cell>
+        <Cell><Data ss:Type="String">Lifecycle, uptime, or modernization indicators point to a phased upgrade discussion.</Data></Cell>
+        <Cell><Data ss:Type="String">Safety lifecycle review</Data></Cell>
+        <Cell><Data ss:Type="String">Confirm evidence quality and account timing</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="Number">33</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-019</Data></Cell>
+        <Cell><Data ss:Type="String">Summit Cold Chain Logistics</Data></Cell>
+        <Cell><Data ss:Type="String">Warehousing and logistics</Data></Cell>
+        <Cell><Data ss:Type="String">Northeast</Data></Cell>
+        <Cell><Data ss:Type="String">Automated cold storage</Data></Cell>
+        <Cell><Data ss:Type="Number">390000</Data></Cell>
+        <Cell><Data ss:Type="Number">690000</Data></Cell>
+        <Cell><Data ss:Type="Number">39</Data></Cell>
+        <Cell><Data ss:Type="String">Monitor</Data></Cell>
+        <Cell><Data ss:Type="Number">40</Data></Cell>
+        <Cell><Data ss:Type="String">Moderate</Data></Cell>
+        <Cell><Data ss:Type="Number">17</Data></Cell>
+        <Cell><Data ss:Type="String">Simple</Data></Cell>
+        <Cell><Data ss:Type="Number">42</Data></Cell>
+        <Cell><Data ss:Type="String">Emerging</Data></Cell>
+        <Cell><Data ss:Type="Number">50</Data></Cell>
+        <Cell><Data ss:Type="String">Monitor</Data></Cell>
+        <Cell><Data ss:Type="Number">46</Data></Cell>
+        <Cell><Data ss:Type="String">Needs discovery</Data></Cell>
+        <Cell><Data ss:Type="Number">45</Data></Cell>
+        <Cell><Data ss:Type="String">Needs discovery</Data></Cell>
+        <Cell><Data ss:Type="String">Medium</Data></Cell>
+        <Cell><Data ss:Type="String">Education/nurture account</Data></Cell>
+        <Cell><Data ss:Type="String">There are useful signals, but more evidence is needed before pursuing a proposal.</Data></Cell>
+        <Cell><Data ss:Type="String">Assessment workshop</Data></Cell>
+        <Cell><Data ss:Type="String">Confirm evidence quality and account timing</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="Number">34</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-015</Data></Cell>
+        <Cell><Data ss:Type="String">Oakline Medical Devices</Data></Cell>
+        <Cell><Data ss:Type="String">Life sciences</Data></Cell>
+        <Cell><Data ss:Type="String">West</Data></Cell>
+        <Cell><Data ss:Type="String">Precision assembly</Data></Cell>
+        <Cell><Data ss:Type="Number">360000</Data></Cell>
+        <Cell><Data ss:Type="Number">520000</Data></Cell>
+        <Cell><Data ss:Type="Number">39</Data></Cell>
+        <Cell><Data ss:Type="String">Monitor</Data></Cell>
+        <Cell><Data ss:Type="Number">14</Data></Cell>
+        <Cell><Data ss:Type="String">Low</Data></Cell>
+        <Cell><Data ss:Type="Number">24</Data></Cell>
+        <Cell><Data ss:Type="String">Simple</Data></Cell>
+        <Cell><Data ss:Type="Number">47</Data></Cell>
+        <Cell><Data ss:Type="String">Emerging</Data></Cell>
+        <Cell><Data ss:Type="Number">33</Data></Cell>
+        <Cell><Data ss:Type="String">Low</Data></Cell>
+        <Cell><Data ss:Type="Number">79</Data></Cell>
+        <Cell><Data ss:Type="String">Ready</Data></Cell>
+        <Cell><Data ss:Type="Number">70</Data></Cell>
+        <Cell><Data ss:Type="String">Developing</Data></Cell>
+        <Cell><Data ss:Type="String">High</Data></Cell>
+        <Cell><Data ss:Type="String">Education/nurture account</Data></Cell>
+        <Cell><Data ss:Type="String">There are useful signals, but more evidence is needed before pursuing a proposal.</Data></Cell>
+        <Cell><Data ss:Type="String">Analytics and edge monitoring</Data></Cell>
+        <Cell><Data ss:Type="String">Build discovery plan and validate business trigger</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="Number">35</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-033</Data></Cell>
+        <Cell><Data ss:Type="String">Grove Furniture Manufacturing</Data></Cell>
+        <Cell><Data ss:Type="String">Building products</Data></Cell>
+        <Cell><Data ss:Type="String">Southeast</Data></Cell>
+        <Cell><Data ss:Type="String">Wood processing</Data></Cell>
+        <Cell><Data ss:Type="Number">270000</Data></Cell>
+        <Cell><Data ss:Type="Number">610000</Data></Cell>
+        <Cell><Data ss:Type="Number">38</Data></Cell>
+        <Cell><Data ss:Type="String">Monitor</Data></Cell>
+        <Cell><Data ss:Type="Number">65</Data></Cell>
+        <Cell><Data ss:Type="String">High</Data></Cell>
+        <Cell><Data ss:Type="Number">29</Data></Cell>
+        <Cell><Data ss:Type="String">Focused</Data></Cell>
+        <Cell><Data ss:Type="Number">32</Data></Cell>
+        <Cell><Data ss:Type="String">Limited</Data></Cell>
+        <Cell><Data ss:Type="Number">53</Data></Cell>
+        <Cell><Data ss:Type="String">Monitor</Data></Cell>
+        <Cell><Data ss:Type="Number">23</Data></Cell>
+        <Cell><Data ss:Type="String">Early</Data></Cell>
+        <Cell><Data ss:Type="Number">27</Data></Cell>
+        <Cell><Data ss:Type="String">Early</Data></Cell>
+        <Cell><Data ss:Type="String">Low</Data></Cell>
+        <Cell><Data ss:Type="String">Modernization candidate</Data></Cell>
+        <Cell><Data ss:Type="String">Lifecycle, uptime, or modernization indicators point to a phased upgrade discussion.</Data></Cell>
+        <Cell><Data ss:Type="String">Safety lifecycle review</Data></Cell>
+        <Cell><Data ss:Type="String">Confirm evidence quality and account timing</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="Number">36</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-029</Data></Cell>
+        <Cell><Data ss:Type="String">Cobalt Industrial Coatings</Data></Cell>
+        <Cell><Data ss:Type="String">Chemicals</Data></Cell>
+        <Cell><Data ss:Type="String">Mid-Atlantic</Data></Cell>
+        <Cell><Data ss:Type="String">Batch mixing</Data></Cell>
+        <Cell><Data ss:Type="Number">310000</Data></Cell>
+        <Cell><Data ss:Type="Number">450000</Data></Cell>
+        <Cell><Data ss:Type="Number">36</Data></Cell>
+        <Cell><Data ss:Type="String">Monitor</Data></Cell>
+        <Cell><Data ss:Type="Number">39</Data></Cell>
+        <Cell><Data ss:Type="String">Moderate</Data></Cell>
+        <Cell><Data ss:Type="Number">10</Data></Cell>
+        <Cell><Data ss:Type="String">Simple</Data></Cell>
+        <Cell><Data ss:Type="Number">39</Data></Cell>
+        <Cell><Data ss:Type="String">Emerging</Data></Cell>
+        <Cell><Data ss:Type="Number">41</Data></Cell>
+        <Cell><Data ss:Type="String">Monitor</Data></Cell>
+        <Cell><Data ss:Type="Number">44</Data></Cell>
+        <Cell><Data ss:Type="String">Needs discovery</Data></Cell>
+        <Cell><Data ss:Type="Number">55</Data></Cell>
+        <Cell><Data ss:Type="String">Needs discovery</Data></Cell>
+        <Cell><Data ss:Type="String">Medium</Data></Cell>
+        <Cell><Data ss:Type="String">Education/nurture account</Data></Cell>
+        <Cell><Data ss:Type="String">There are useful signals, but more evidence is needed before pursuing a proposal.</Data></Cell>
+        <Cell><Data ss:Type="String">Assessment workshop</Data></Cell>
+        <Cell><Data ss:Type="String">Confirm evidence quality and account timing</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="Number">37</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-030</Data></Cell>
+        <Cell><Data ss:Type="String">Driftwood Marine Fabrication</Data></Cell>
+        <Cell><Data ss:Type="String">Transportation equipment</Data></Cell>
+        <Cell><Data ss:Type="String">Gulf Coast</Data></Cell>
+        <Cell><Data ss:Type="String">Large assembly</Data></Cell>
+        <Cell><Data ss:Type="Number">190000</Data></Cell>
+        <Cell><Data ss:Type="Number">330000</Data></Cell>
+        <Cell><Data ss:Type="Number">35</Data></Cell>
+        <Cell><Data ss:Type="String">Monitor</Data></Cell>
+        <Cell><Data ss:Type="Number">75</Data></Cell>
+        <Cell><Data ss:Type="String">High</Data></Cell>
+        <Cell><Data ss:Type="Number">1</Data></Cell>
+        <Cell><Data ss:Type="String">Simple</Data></Cell>
+        <Cell><Data ss:Type="Number">31</Data></Cell>
+        <Cell><Data ss:Type="String">Limited</Data></Cell>
+        <Cell><Data ss:Type="Number">49</Data></Cell>
+        <Cell><Data ss:Type="String">Monitor</Data></Cell>
+        <Cell><Data ss:Type="Number">20</Data></Cell>
+        <Cell><Data ss:Type="String">Early</Data></Cell>
+        <Cell><Data ss:Type="Number">27</Data></Cell>
+        <Cell><Data ss:Type="String">Early</Data></Cell>
+        <Cell><Data ss:Type="String">Low</Data></Cell>
+        <Cell><Data ss:Type="String">Low priority</Data></Cell>
+        <Cell><Data ss:Type="String">Low near-term readiness and limited value signal make immediate pursuit less attractive.</Data></Cell>
+        <Cell><Data ss:Type="String">Safety lifecycle review</Data></Cell>
+        <Cell><Data ss:Type="String">Confirm evidence quality and account timing</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="Number">38</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-008</Data></Cell>
+        <Cell><Data ss:Type="String">Harbor Pharma Fill Finish</Data></Cell>
+        <Cell><Data ss:Type="String">Life sciences</Data></Cell>
+        <Cell><Data ss:Type="String">Northeast</Data></Cell>
+        <Cell><Data ss:Type="String">Validated packaging</Data></Cell>
+        <Cell><Data ss:Type="Number">420000</Data></Cell>
+        <Cell><Data ss:Type="Number">640000</Data></Cell>
+        <Cell><Data ss:Type="Number">34</Data></Cell>
+        <Cell><Data ss:Type="String">Monitor</Data></Cell>
+        <Cell><Data ss:Type="Number">15</Data></Cell>
+        <Cell><Data ss:Type="String">Low</Data></Cell>
+        <Cell><Data ss:Type="Number">13</Data></Cell>
+        <Cell><Data ss:Type="String">Simple</Data></Cell>
+        <Cell><Data ss:Type="Number">40</Data></Cell>
+        <Cell><Data ss:Type="String">Emerging</Data></Cell>
+        <Cell><Data ss:Type="Number">35</Data></Cell>
+        <Cell><Data ss:Type="String">Low</Data></Cell>
+        <Cell><Data ss:Type="Number">68</Data></Cell>
+        <Cell><Data ss:Type="String">Developing</Data></Cell>
+        <Cell><Data ss:Type="Number">52</Data></Cell>
+        <Cell><Data ss:Type="String">Needs discovery</Data></Cell>
+        <Cell><Data ss:Type="String">High</Data></Cell>
+        <Cell><Data ss:Type="String">Education/nurture account</Data></Cell>
+        <Cell><Data ss:Type="String">There are useful signals, but more evidence is needed before pursuing a proposal.</Data></Cell>
+        <Cell><Data ss:Type="String">Assessment workshop</Data></Cell>
+        <Cell><Data ss:Type="String">Build discovery plan and validate business trigger</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="Number">39</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-032</Data></Cell>
+        <Cell><Data ss:Type="String">Frontier Water Systems</Data></Cell>
+        <Cell><Data ss:Type="String">Water and utilities</Data></Cell>
+        <Cell><Data ss:Type="String">Mountain</Data></Cell>
+        <Cell><Data ss:Type="String">Treatment and pumping</Data></Cell>
+        <Cell><Data ss:Type="Number">300000</Data></Cell>
+        <Cell><Data ss:Type="Number">380000</Data></Cell>
+        <Cell><Data ss:Type="Number">33</Data></Cell>
+        <Cell><Data ss:Type="String">Monitor</Data></Cell>
+        <Cell><Data ss:Type="Number">22</Data></Cell>
+        <Cell><Data ss:Type="String">Low</Data></Cell>
+        <Cell><Data ss:Type="Number">20</Data></Cell>
+        <Cell><Data ss:Type="String">Simple</Data></Cell>
+        <Cell><Data ss:Type="Number">34</Data></Cell>
+        <Cell><Data ss:Type="String">Limited</Data></Cell>
+        <Cell><Data ss:Type="Number">40</Data></Cell>
+        <Cell><Data ss:Type="String">Monitor</Data></Cell>
+        <Cell><Data ss:Type="Number">60</Data></Cell>
+        <Cell><Data ss:Type="String">Developing</Data></Cell>
+        <Cell><Data ss:Type="Number">45</Data></Cell>
+        <Cell><Data ss:Type="String">Needs discovery</Data></Cell>
+        <Cell><Data ss:Type="String">Medium</Data></Cell>
+        <Cell><Data ss:Type="String">Education/nurture account</Data></Cell>
+        <Cell><Data ss:Type="String">There are useful signals, but more evidence is needed before pursuing a proposal.</Data></Cell>
+        <Cell><Data ss:Type="String">Assessment workshop</Data></Cell>
+        <Cell><Data ss:Type="String">Build discovery plan and validate business trigger</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="Number">40</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-023</Data></Cell>
+        <Cell><Data ss:Type="String">Westhaven Aerospace Machining</Data></Cell>
+        <Cell><Data ss:Type="String">Aerospace</Data></Cell>
+        <Cell><Data ss:Type="String">West</Data></Cell>
+        <Cell><Data ss:Type="String">Precision machining</Data></Cell>
+        <Cell><Data ss:Type="Number">260000</Data></Cell>
+        <Cell><Data ss:Type="Number">420000</Data></Cell>
+        <Cell><Data ss:Type="Number">29</Data></Cell>
+        <Cell><Data ss:Type="String">Monitor</Data></Cell>
+        <Cell><Data ss:Type="Number">14</Data></Cell>
+        <Cell><Data ss:Type="String">Low</Data></Cell>
+        <Cell><Data ss:Type="Number">13</Data></Cell>
+        <Cell><Data ss:Type="String">Simple</Data></Cell>
+        <Cell><Data ss:Type="Number">32</Data></Cell>
+        <Cell><Data ss:Type="String">Limited</Data></Cell>
+        <Cell><Data ss:Type="Number">37</Data></Cell>
+        <Cell><Data ss:Type="String">Monitor</Data></Cell>
+        <Cell><Data ss:Type="Number">44</Data></Cell>
+        <Cell><Data ss:Type="String">Needs discovery</Data></Cell>
+        <Cell><Data ss:Type="Number">51</Data></Cell>
+        <Cell><Data ss:Type="String">Needs discovery</Data></Cell>
+        <Cell><Data ss:Type="String">Medium</Data></Cell>
+        <Cell><Data ss:Type="String">Education/nurture account</Data></Cell>
+        <Cell><Data ss:Type="String">There are useful signals, but more evidence is needed before pursuing a proposal.</Data></Cell>
+        <Cell><Data ss:Type="String">Assessment workshop</Data></Cell>
+        <Cell><Data ss:Type="String">Confirm evidence quality and account timing</Data></Cell>
+      </Row>
+    </Table>
+  </Worksheet>
+  <Worksheet ss:Name="Segment Summary">
+    <Table>
+      <Row>
+        <Cell><Data ss:Type="String">priority_segment</Data></Cell>
+        <Cell><Data ss:Type="String">account_count</Data></Cell>
+        <Cell><Data ss:Type="String">estimated_opportunity_size</Data></Cell>
+        <Cell><Data ss:Type="String">estimated_annual_downtime_cost</Data></Cell>
+        <Cell><Data ss:Type="String">average_priority_score</Data></Cell>
+        <Cell><Data ss:Type="String">average_lifecycle_risk_score</Data></Cell>
+        <Cell><Data ss:Type="String">average_data_readiness_score</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="String">Education/nurture account</Data></Cell>
+        <Cell><Data ss:Type="Number">14</Data></Cell>
+        <Cell><Data ss:Type="Number">6540000</Data></Cell>
+        <Cell><Data ss:Type="Number">9980000</Data></Cell>
+        <Cell><Data ss:Type="Number">43.6</Data></Cell>
+        <Cell><Data ss:Type="Number">33.3</Data></Cell>
+        <Cell><Data ss:Type="Number">65.1</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="String">Modernization candidate</Data></Cell>
+        <Cell><Data ss:Type="Number">10</Data></Cell>
+        <Cell><Data ss:Type="Number">5950000</Data></Cell>
+        <Cell><Data ss:Type="Number">10740000</Data></Cell>
+        <Cell><Data ss:Type="Number">53.4</Data></Cell>
+        <Cell><Data ss:Type="Number">65.7</Data></Cell>
+        <Cell><Data ss:Type="Number">47.8</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="String">Strategic enterprise account</Data></Cell>
+        <Cell><Data ss:Type="Number">5</Data></Cell>
+        <Cell><Data ss:Type="Number">5040000</Data></Cell>
+        <Cell><Data ss:Type="Number">7230000</Data></Cell>
+        <Cell><Data ss:Type="Number">58.2</Data></Cell>
+        <Cell><Data ss:Type="Number">32.0</Data></Cell>
+        <Cell><Data ss:Type="Number">86.0</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="String">Service-risk account</Data></Cell>
+        <Cell><Data ss:Type="Number">5</Data></Cell>
+        <Cell><Data ss:Type="Number">3030000</Data></Cell>
+        <Cell><Data ss:Type="Number">6290000</Data></Cell>
+        <Cell><Data ss:Type="Number">54.2</Data></Cell>
+        <Cell><Data ss:Type="Number">82.8</Data></Cell>
+        <Cell><Data ss:Type="Number">30.8</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="String">Quick win</Data></Cell>
+        <Cell><Data ss:Type="Number">2</Data></Cell>
+        <Cell><Data ss:Type="Number">2830000</Data></Cell>
+        <Cell><Data ss:Type="Number">4450000</Data></Cell>
+        <Cell><Data ss:Type="Number">75.5</Data></Cell>
+        <Cell><Data ss:Type="Number">88.5</Data></Cell>
+        <Cell><Data ss:Type="Number">56.0</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="String">Data-readiness candidate</Data></Cell>
+        <Cell><Data ss:Type="Number">3</Data></Cell>
+        <Cell><Data ss:Type="Number">2180000</Data></Cell>
+        <Cell><Data ss:Type="Number">3750000</Data></Cell>
+        <Cell><Data ss:Type="Number">56.3</Data></Cell>
+        <Cell><Data ss:Type="Number">35.7</Data></Cell>
+        <Cell><Data ss:Type="Number">81.0</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="String">Low priority</Data></Cell>
+        <Cell><Data ss:Type="Number">1</Data></Cell>
+        <Cell><Data ss:Type="Number">190000</Data></Cell>
+        <Cell><Data ss:Type="Number">330000</Data></Cell>
+        <Cell><Data ss:Type="Number">35.0</Data></Cell>
+        <Cell><Data ss:Type="Number">75.0</Data></Cell>
+        <Cell><Data ss:Type="Number">20.0</Data></Cell>
+      </Row>
+    </Table>
+  </Worksheet>
+  <Worksheet ss:Name="Region Summary">
+    <Table>
+      <Row>
+        <Cell><Data ss:Type="String">region</Data></Cell>
+        <Cell><Data ss:Type="String">account_count</Data></Cell>
+        <Cell><Data ss:Type="String">estimated_opportunity_size</Data></Cell>
+        <Cell><Data ss:Type="String">estimated_annual_downtime_cost</Data></Cell>
+        <Cell><Data ss:Type="String">average_priority_score</Data></Cell>
+        <Cell><Data ss:Type="String">tier_1_2_accounts</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="String">Southeast</Data></Cell>
+        <Cell><Data ss:Type="Number">6</Data></Cell>
+        <Cell><Data ss:Type="Number">4580000</Data></Cell>
+        <Cell><Data ss:Type="Number">7090000</Data></Cell>
+        <Cell><Data ss:Type="Number">54.2</Data></Cell>
+        <Cell><Data ss:Type="Number">1</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="String">Northeast</Data></Cell>
+        <Cell><Data ss:Type="Number">6</Data></Cell>
+        <Cell><Data ss:Type="Number">3580000</Data></Cell>
+        <Cell><Data ss:Type="Number">5750000</Data></Cell>
+        <Cell><Data ss:Type="Number">48.0</Data></Cell>
+        <Cell><Data ss:Type="Number">0</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="String">Great Lakes</Data></Cell>
+        <Cell><Data ss:Type="Number">3</Data></Cell>
+        <Cell><Data ss:Type="Number">2960000</Data></Cell>
+        <Cell><Data ss:Type="Number">5110000</Data></Cell>
+        <Cell><Data ss:Type="Number">67.0</Data></Cell>
+        <Cell><Data ss:Type="Number">3</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="String">Midwest</Data></Cell>
+        <Cell><Data ss:Type="Number">5</Data></Cell>
+        <Cell><Data ss:Type="Number">2890000</Data></Cell>
+        <Cell><Data ss:Type="Number">5540000</Data></Cell>
+        <Cell><Data ss:Type="Number">52.8</Data></Cell>
+        <Cell><Data ss:Type="Number">1</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="String">Southwest</Data></Cell>
+        <Cell><Data ss:Type="Number">3</Data></Cell>
+        <Cell><Data ss:Type="Number">2500000</Data></Cell>
+        <Cell><Data ss:Type="Number">4130000</Data></Cell>
+        <Cell><Data ss:Type="Number">56.7</Data></Cell>
+        <Cell><Data ss:Type="Number">1</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="String">West</Data></Cell>
+        <Cell><Data ss:Type="Number">5</Data></Cell>
+        <Cell><Data ss:Type="Number">2240000</Data></Cell>
+        <Cell><Data ss:Type="Number">3480000</Data></Cell>
+        <Cell><Data ss:Type="Number">43.2</Data></Cell>
+        <Cell><Data ss:Type="Number">0</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="String">Pacific Northwest</Data></Cell>
+        <Cell><Data ss:Type="Number">2</Data></Cell>
+        <Cell><Data ss:Type="Number">2040000</Data></Cell>
+        <Cell><Data ss:Type="Number">3260000</Data></Cell>
+        <Cell><Data ss:Type="Number">69.0</Data></Cell>
+        <Cell><Data ss:Type="Number">1</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="String">South Central</Data></Cell>
+        <Cell><Data ss:Type="Number">2</Data></Cell>
+        <Cell><Data ss:Type="Number">1200000</Data></Cell>
+        <Cell><Data ss:Type="Number">1690000</Data></Cell>
+        <Cell><Data ss:Type="Number">47.5</Data></Cell>
+        <Cell><Data ss:Type="Number">0</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="String">Plains</Data></Cell>
+        <Cell><Data ss:Type="Number">2</Data></Cell>
+        <Cell><Data ss:Type="Number">1110000</Data></Cell>
+        <Cell><Data ss:Type="Number">1990000</Data></Cell>
+        <Cell><Data ss:Type="Number">50.0</Data></Cell>
+        <Cell><Data ss:Type="Number">0</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="String">Mountain</Data></Cell>
+        <Cell><Data ss:Type="Number">2</Data></Cell>
+        <Cell><Data ss:Type="Number">990000</Data></Cell>
+        <Cell><Data ss:Type="Number">1940000</Data></Cell>
+        <Cell><Data ss:Type="Number">44.5</Data></Cell>
+        <Cell><Data ss:Type="Number">0</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="String">Mid-Atlantic</Data></Cell>
+        <Cell><Data ss:Type="Number">2</Data></Cell>
+        <Cell><Data ss:Type="Number">870000</Data></Cell>
+        <Cell><Data ss:Type="Number">1570000</Data></Cell>
+        <Cell><Data ss:Type="Number">44.5</Data></Cell>
+        <Cell><Data ss:Type="Number">0</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="String">Gulf Coast</Data></Cell>
+        <Cell><Data ss:Type="Number">2</Data></Cell>
+        <Cell><Data ss:Type="Number">800000</Data></Cell>
+        <Cell><Data ss:Type="Number">1220000</Data></Cell>
+        <Cell><Data ss:Type="Number">43.5</Data></Cell>
+        <Cell><Data ss:Type="Number">0</Data></Cell>
+      </Row>
+    </Table>
+  </Worksheet>
+  <Worksheet ss:Name="Opportunity Summary">
+    <Table>
+      <Row>
+        <Cell><Data ss:Type="String">opportunity_type</Data></Cell>
+        <Cell><Data ss:Type="String">account_count</Data></Cell>
+        <Cell><Data ss:Type="String">estimated_opportunity_size</Data></Cell>
+        <Cell><Data ss:Type="String">average_priority_score</Data></Cell>
+        <Cell><Data ss:Type="String">account_ids</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="String">Safety lifecycle review</Data></Cell>
+        <Cell><Data ss:Type="Number">15</Data></Cell>
+        <Cell><Data ss:Type="Number">9880000</Data></Cell>
+        <Cell><Data ss:Type="Number">53.8</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-005, IBA-014, IBA-038, IBA-003, IBA-002, IBA-025, IBA-016, IBA-009, IBA-040, IBA-035, IBA-013, IBA-027, IBA-021, IBA-033, IBA-030</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="String">Analytics and edge monitoring</Data></Cell>
+        <Cell><Data ss:Type="Number">11</Data></Cell>
+        <Cell><Data ss:Type="Number">8310000</Data></Cell>
+        <Cell><Data ss:Type="Number">52.3</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-039, IBA-001, IBA-006, IBA-017, IBA-010, IBA-026, IBA-022, IBA-034, IBA-036, IBA-028, IBA-015</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="String">Short-cycle service opportunity</Data></Cell>
+        <Cell><Data ss:Type="Number">5</Data></Cell>
+        <Cell><Data ss:Type="Number">3080000</Data></Cell>
+        <Cell><Data ss:Type="Number">55.4</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-037, IBA-024, IBA-031, IBA-012, IBA-020</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="String">Assessment workshop</Data></Cell>
+        <Cell><Data ss:Type="Number">7</Data></Cell>
+        <Cell><Data ss:Type="Number">2670000</Data></Cell>
+        <Cell><Data ss:Type="Number">38.0</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-004, IBA-011, IBA-019, IBA-029, IBA-008, IBA-032, IBA-023</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="String">Drive health and predictive maintenance</Data></Cell>
+        <Cell><Data ss:Type="Number">2</Data></Cell>
+        <Cell><Data ss:Type="Number">1820000</Data></Cell>
+        <Cell><Data ss:Type="Number">68.5</Data></Cell>
+        <Cell><Data ss:Type="String">IBA-018, IBA-007</Data></Cell>
+      </Row>
+    </Table>
+  </Worksheet>
+</Workbook>

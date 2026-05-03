@@ -12,7 +12,9 @@ https://avi-patel-1.github.io/Installed-Base-Analytics-Playbook-/
 
 ```bash
 npm install
+npm run analytics:export
 npm run dev
+npm run analytics:test
 npm run test
 npm run build
 npm run preview
@@ -65,9 +67,31 @@ The app exports:
 
 Example exports are included in `examples/`.
 
+## Python, SQL, And Workbook Pipeline
+
+The static frontend can be paired with a stdlib Python and SQLite export pipeline. It loads `src/data/accounts.json`, creates a local SQLite database from `analytics/schema.sql`, runs SQL scoring and summary queries in `analytics/queries/`, and writes static outputs to `public/analytics/`.
+
+```bash
+npm run analytics:export
+npm run analytics:test
+```
+
+Generated files include:
+
+- `public/analytics/account_scores.json`
+- `public/analytics/account_scores.csv`
+- `public/analytics/segment_summary.csv`
+- `public/analytics/region_summary.csv`
+- `public/analytics/opportunity_summary.json`
+- `public/analytics/installed_base_analytics_workbook.xml`
+
+The workbook is SpreadsheetML XML, which is Excel-compatible and requires no third-party Python package. The local SQLite file is written under `analytics/output/` and is ignored by git.
+
 ## Static Deployment
 
 This project is designed for static hosting. GitHub Pages deployment is configured in `.github/workflows/deploy.yml`.
+
+The deployment workflow runs the Python analytics export before the Vite build so files under `public/analytics/` are copied into `dist/analytics/` with the rest of the static site.
 
 For repository Pages, the Vite base path defaults to a relative base. If your hosting target needs a fixed base path, set `VITE_BASE_PATH` before build:
 
@@ -85,4 +109,5 @@ See `docs/deployment.md` for full deployment notes.
 - `docs/recommendation_rules.md`
 - `docs/playbook_format.md`
 - `docs/deployment.md`
+- `docs/analytics_pipeline.md`
 - `docs/example_playbook.md`
