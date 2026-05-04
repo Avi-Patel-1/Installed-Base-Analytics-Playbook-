@@ -127,6 +127,16 @@ pre {
   font-size: 0.8rem;
 }
 
+code {
+  background: #eef4f4;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  color: var(--primary-dark);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.86em;
+  padding: 0.08rem 0.25rem;
+}
+
 .app-shell {
   width: min(1480px, calc(100% - 32px));
   margin: 0 auto;
@@ -516,7 +526,8 @@ td {
 }
 
 .segment-list,
-.rules-list {
+.rules-list,
+.flow-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.8rem;
@@ -524,11 +535,27 @@ td {
 }
 
 .segment-list article,
-.rules-list article {
+.rules-list article,
+.flow-grid article {
   border: 1px solid var(--line);
   border-radius: 7px;
   padding: 0.85rem;
   background: #fbfcfd;
+}
+
+.flow-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.flow-grid article {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.method-note {
+  color: var(--muted);
+  font-size: 0.88rem;
+  margin-top: 0.75rem;
 }
 
 .export-grid {
@@ -553,6 +580,7 @@ td {
   .detail-grid,
   .method-grid,
   .score-grid,
+  .flow-grid,
   .export-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -577,6 +605,7 @@ td {
   .two-column,
   .segment-list,
   .rules-list,
+  .flow-grid,
   .export-grid,
   .kpi-grid,
   .distribution {

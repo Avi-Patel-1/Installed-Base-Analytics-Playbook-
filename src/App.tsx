@@ -638,30 +638,96 @@ function DataImport({
 }
 
 function Methodology() {
+  const pipelineSteps = [
+    ['1. Account inputs', 'Account records in src/data/accounts.json describe sites, installed equipment, lifecycle status, downtime exposure, readiness, and context signals.'],
+    ['2. SQLite staging', 'analytics/pipeline.py loads the JSON into analytics/schema.sql tables so the scoring logic can be inspected and rerun outside the browser.'],
+    ['3. SQL scoring', 'analytics/queries/account_scores.sql calculates component scores, priority_score, segment, opportunity_type, and next_best_action.'],
+    ['4. Ranked dashboard', 'src/scoring/scoring.ts mirrors the model for live imported data, then src/App.tsx filters, sorts, and renders the dashboard.'],
+    ['5. Playbook outputs', 'src/recommendations/rules.ts and src/playbook/generator.ts turn the scored account into recommendations, evidence requests, and exportable playbooks.'],
+  ]
+  const scoreComponents = [
+    ['Lifecycle risk', 'Lifecycle stage, support risk, safety age, and downtime exposure.'],
+    ['Installed-base complexity', 'Production lines, drives, sensors, and platform variation.'],
+    ['Modernization fit', 'Modernization interest, lifecycle pressure, strategic fit, and downtime cost.'],
+    ['Service urgency', 'Support exposure, active trigger, service context, and downtime severity.'],
+    ['Data readiness', 'Data availability, installed-base confidence, sensors, and HMI/SCADA context.'],
+    ['Sales readiness', 'Modernization interest, strategic fit, service relationship, trigger strength, and competitive context.'],
+  ]
+
   return (
     <section className="stack">
       <div className="panel">
-        <h2>Scoring Methodology</h2>
+        <h2>Methodology and Implementation Notes</h2>
         <p>
-          The model ranks accounts by lifecycle risk, installed-base complexity, modernization fit, service urgency, data readiness,
-          sales readiness, and estimated opportunity value. Every score includes triggered rules, rationale, and improvement levers.
+          This project ranks industrial accounts by evidence that a practical installed-base opportunity exists, not by account size
+          alone. The model stays inside account-level planning: it prioritizes discovery, modernization, service, monitoring, and
+          assessment paths, but it does not replace engineering design, safety validation, commercial quoting, or site acceptance work.
         </p>
       </div>
 
+      <div className="two-column">
+        <article className="panel">
+          <h3>Purpose and Boundaries</h3>
+          <ul>
+            <li>Purpose: convert inconsistent account notes into a ranked, explainable prioritization view.</li>
+            <li>Installed base means the known controls, HMI/SCADA, drives, motors, sensors, safety systems, production lines, and support context already present at a site.</li>
+            <li>The result is a decision-support model for where to investigate next; low-confidence data should trigger assessment, not automatic proposal scope.</li>
+          </ul>
+        </article>
+        <article className="panel">
+          <h3>Why Ranking Is Not Just Opportunity Size</h3>
+          <p>
+            Estimated opportunity value is included, but it carries limited weight because a large account may still lack timing,
+            evidence, access, data quality, or support urgency. Priority is stronger when value is paired with lifecycle pressure,
+            readiness, service context, and a credible next action.
+          </p>
+          <p className="method-note">SQL ordering uses priority first, then opportunity size as a tie-breaker.</p>
+        </article>
+      </div>
+
+      <div className="panel">
+        <h3>Data Flow</h3>
+        <div className="flow-grid">
+          {pipelineSteps.map(([title, body]) => (
+            <article key={title}>
+              <strong>{title}</strong>
+              <p>{body}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+
       <div className="method-grid">
-        {[
-          ['Lifecycle risk', 'Lifecycle stage, support risk, safety age, and downtime exposure.'],
-          ['Installed-base complexity', 'Production lines, drives, sensors, and platform variation.'],
-          ['Modernization fit', 'Modernization interest, lifecycle pressure, strategic fit, and downtime cost.'],
-          ['Service urgency', 'Support exposure, active trigger, service context, and downtime severity.'],
-          ['Data readiness', 'Data availability, installed-base confidence, sensors, and HMI/SCADA context.'],
-          ['Sales readiness', 'Modernization interest, strategic fit, service relationship, trigger strength, and competitive context.'],
-        ].map(([title, body]) => (
+        {scoreComponents.map(([title, body]) => (
           <article className="panel" key={title}>
             <h3>{title}</h3>
             <p>{body}</p>
           </article>
         ))}
+      </div>
+
+      <div className="two-column">
+        <article className="panel">
+          <h3>Component Scores and Priority Score</h3>
+          <p>
+            Each component normalizes different evidence onto a 0-100 scale with labels and rationale. The priority score blends the
+            components with weights that favor modernization fit, lifecycle risk, and service urgency, while keeping opportunity value as
+            one input rather than the whole answer.
+          </p>
+          <ul>
+            <li><code>src/scoring/scoring.ts</code> supports live browser scoring after CSV import.</li>
+            <li><code>analytics/queries/account_scores.sql</code> supports reproducible batch scoring and static exports.</li>
+          </ul>
+        </article>
+        <article className="panel">
+          <h3>Recommendations and Playbooks</h3>
+          <p>
+            Recommendations are selected by rules that match concrete account evidence: aging controllers, high downtime, safety age,
+            visibility gaps, process variability, data readiness, service history, and competitive context. The generated playbook keeps
+            the primary opportunity, evidence to collect, workshop agenda, value hypothesis, risks, and follow-up actions together.
+          </p>
+          <p className="method-note">Primary files: <code>src/recommendations/rules.ts</code> and <code>src/playbook/generator.ts</code>.</p>
+        </article>
       </div>
 
       <div className="panel">
@@ -688,6 +754,33 @@ function Methodology() {
             </article>
           ))}
         </div>
+      </div>
+
+      <div className="two-column">
+        <article className="panel">
+          <h3>Static Export Architecture</h3>
+          <p>
+            The analytics pipeline runs before deployment: Python reads the account dataset, SQLite applies schema and SQL queries, and
+            CSV, JSON, and Excel-compatible XML files are written to <code>public/analytics/</code>. The React app can be hosted as static
+            assets because the browser only needs prebuilt files and client-side filtering/export logic.
+          </p>
+          <ul>
+            <li><code>analytics/pipeline.py</code> builds the database and public exports.</li>
+            <li><code>vite.config.ts</code> uses a relative base path so GitHub Pages can serve the built files from a project subpath.</li>
+          </ul>
+        </article>
+        <article className="panel">
+          <h3>Validation and Production Extension</h3>
+          <p>
+            The current tests cover Python analytics output, scoring behavior, recommendation rules, playbook generation, and export
+            formatting. A production path would add authenticated data ingestion, scheduled pipeline runs, data quality checks, field-level
+            lineage, user-specific permissions, and review workflows before recommendations are released.
+          </p>
+          <ul>
+            <li><code>npm run analytics:test</code> validates the SQLite export path.</li>
+            <li><code>npm run test</code>, <code>npm run lint</code>, and <code>npm run build</code> validate the app surface.</li>
+          </ul>
+        </article>
       </div>
     </section>
   )
