@@ -17,7 +17,7 @@ import type { Account, Playbook, ScoredAccount, ScoreDetail } from './types'
 import { accountsToCsv, parseAccountsCsv, sampleCsv } from './utils/csv'
 import { formatCompactCurrency, formatCurrency, formatPercent } from './utils/format'
 
-type Screen = 'dashboard' | 'detail' | 'playbook' | 'import' | 'methodology' | 'reports'
+type Screen = 'dashboard' | 'detail' | 'playbook' | 'import' | 'flow' | 'methodology' | 'reports'
 type SortKey = 'priority' | 'opportunity' | 'risk' | 'readiness' | 'name'
 
 interface Filters {
@@ -134,7 +134,7 @@ function App() {
           <h1>Technical Consulting Playbook</h1>
         </div>
         <nav className="screen-tabs" aria-label="Primary sections">
-          {(['dashboard', 'detail', 'playbook', 'import', 'methodology', 'reports'] as Screen[]).map((item) => (
+          {(['dashboard', 'detail', 'playbook', 'import', 'flow', 'methodology', 'reports'] as Screen[]).map((item) => (
             <button key={item} className={screen === item ? 'active' : ''} onClick={() => setScreen(item)}>
               {screenLabel(item)}
             </button>
@@ -184,6 +184,8 @@ function App() {
           onResetSample={resetSampleData}
         />
       )}
+
+      {screen === 'flow' && <FlowDiagram />}
 
       {screen === 'methodology' && <Methodology />}
 
@@ -637,6 +639,49 @@ function DataImport({
   )
 }
 
+function FlowDiagram() {
+  const analysisFlow = [
+    ['1', 'Account data', 'Installed equipment, downtime, lifecycle, service, trigger, and readiness inputs.'],
+    ['2', 'Import + staging', 'Sample JSON or uploaded CSV becomes the active account dataset.'],
+    ['3', 'SQL scoring', 'Python and SQLite apply schema and queries for reproducible exports.'],
+    ['4', 'Browser model', 'React scoring supports filters, account detail, and imported data.'],
+    ['5', 'Prioritization', 'Component scores produce segment, opportunity type, and next-best action.'],
+    ['6', 'Playbook + exports', 'Recommendations, discovery questions, CSV, JSON, and workbook outputs.'],
+  ]
+  const supportPaths = [
+    ['Ranking logic', 'Priority balances modernization fit, lifecycle risk, service urgency, complexity, readiness, and value.'],
+    ['Recommendation logic', 'Rules turn account evidence into practical next moves such as modernization, drive health, safety review, or assessment.'],
+    ['Static hosting', 'Generated analytics files live under public/analytics and are served with the dashboard build.'],
+  ]
+
+  return (
+    <section className="stack">
+      <div className="panel">
+        <h2>Analysis Flow Diagram</h2>
+        <p>High-level path from installed-base records to ranked opportunities and playbook outputs.</p>
+        <div className="block-flow">
+          {analysisFlow.map(([index, title, body]) => (
+            <article className="flow-card" key={title}>
+              <span className="flow-step-index">{index}</span>
+              <h3>{title}</h3>
+              <p>{body}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+
+      <div className="flow-summary-grid">
+        {supportPaths.map(([title, body]) => (
+          <article className="panel" key={title}>
+            <h3>{title}</h3>
+            <p>{body}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  )
+}
+
 function Methodology() {
   const pipelineSteps = [
     ['1. Account inputs', 'Account records in src/data/accounts.json describe sites, installed equipment, lifecycle status, downtime exposure, readiness, and context signals.'],
@@ -988,6 +1033,7 @@ function screenLabel(screen: Screen) {
     detail: 'Account Detail',
     playbook: 'Playbook',
     import: 'Data Import',
+    flow: 'Flow',
     methodology: 'Methodology',
     reports: 'Reports',
   }

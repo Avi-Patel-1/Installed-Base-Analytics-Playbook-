@@ -552,6 +552,54 @@ td {
   gap: 0.35rem;
 }
 
+.block-flow {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.flow-card {
+  position: relative;
+  display: grid;
+  align-content: start;
+  gap: 0.45rem;
+  min-height: 172px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  padding: 0.85rem;
+  background: #fbfcfd;
+}
+
+.flow-card:not(:last-child)::after {
+  content: '→';
+  position: absolute;
+  top: 50%;
+  right: -0.9rem;
+  z-index: 1;
+  color: var(--primary);
+  font-weight: 900;
+  transform: translateY(-50%);
+}
+
+.flow-step-index {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  border: 1px solid #b7d6d7;
+  border-radius: 999px;
+  color: var(--primary-dark);
+  background: #eaf3f5;
+  font-weight: 850;
+}
+
+.flow-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
 .method-note {
   color: var(--muted);
   font-size: 0.88rem;
@@ -581,8 +629,14 @@ td {
   .method-grid,
   .score-grid,
   .flow-grid,
+  .block-flow,
+  .flow-summary-grid,
   .export-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .flow-card:nth-child(even)::after {
+    display: none;
   }
 
   .screen-tabs {
@@ -606,10 +660,24 @@ td {
   .segment-list,
   .rules-list,
   .flow-grid,
+  .block-flow,
+  .flow-summary-grid,
   .export-grid,
   .kpi-grid,
   .distribution {
     grid-template-columns: 1fr;
+  }
+
+  .flow-card:nth-child(even)::after {
+    display: block;
+  }
+
+  .flow-card:not(:last-child)::after {
+    content: '↓';
+    top: auto;
+    right: 50%;
+    bottom: -1.1rem;
+    transform: translateX(50%);
   }
 
   .panel-heading,
