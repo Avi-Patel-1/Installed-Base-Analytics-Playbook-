@@ -641,40 +641,101 @@ function DataImport({
 
 function FlowDiagram() {
   const analysisFlow = [
-    ['1', 'Account data', 'Installed equipment, downtime, lifecycle, service, trigger, and readiness inputs.'],
-    ['2', 'Import + staging', 'Sample JSON or uploaded CSV becomes the active account dataset.'],
-    ['3', 'SQL scoring', 'Python and SQLite apply schema and queries for reproducible exports.'],
-    ['4', 'Browser model', 'React scoring supports filters, account detail, and imported data.'],
-    ['5', 'Prioritization', 'Component scores produce segment, opportunity type, and next-best action.'],
-    ['6', 'Playbook + exports', 'Recommendations, discovery questions, CSV, JSON, and workbook outputs.'],
+    {
+      number: '01',
+      label: 'Source data',
+      title: 'Account records',
+      bullets: ['Installed equipment', 'Downtime and lifecycle risk', 'Trigger, readiness, confidence'],
+      code: 'accounts.json / CSV',
+    },
+    {
+      number: '02',
+      label: 'Prep layer',
+      title: 'Import + normalize',
+      bullets: ['Parse uploaded CSV', 'Validate account fields', 'Set active dataset'],
+      code: 'parseAccountsCsv()',
+    },
+    {
+      number: '03',
+      label: 'Batch layer',
+      title: 'SQLite scoring',
+      bullets: ['Load schema', 'Run SQL scoring query', 'Write CSV/JSON/XML outputs'],
+      code: 'analytics/pipeline.py',
+    },
+    {
+      number: '04',
+      label: 'App layer',
+      title: 'Browser scoring',
+      bullets: ['Score live imported data', 'Filter and sort accounts', 'Open account detail'],
+      code: 'scoreAccounts()',
+    },
+    {
+      number: '05',
+      label: 'Decision layer',
+      title: 'Priority queue',
+      bullets: ['Priority score', 'Segment', 'Opportunity type and next action'],
+      code: 'scoring.ts',
+    },
+    {
+      number: '06',
+      label: 'Output layer',
+      title: 'Playbook + exports',
+      bullets: ['Discovery questions', 'Recommendation evidence', 'CSV, JSON, workbook files'],
+      code: 'generator.ts + exporters',
+    },
   ]
   const supportPaths = [
-    ['Ranking logic', 'Priority balances modernization fit, lifecycle risk, service urgency, complexity, readiness, and value.'],
-    ['Recommendation logic', 'Rules turn account evidence into practical next moves such as modernization, drive health, safety review, or assessment.'],
-    ['Static hosting', 'Generated analytics files live under public/analytics and are served with the dashboard build.'],
+    {
+      title: 'Priority formula',
+      items: ['Largest weights: modernization fit, lifecycle risk, and service urgency.', 'Opportunity value is a tie-breaker input, not the whole ranking.'],
+    },
+    {
+      title: 'Rules layer',
+      items: ['Recommendation rules map evidence to next moves.', 'Examples: modernization, drive health, safety review, monitoring, or assessment.'],
+    },
+    {
+      title: 'Static output path',
+      items: ['Python and SQLite generate files under public/analytics.', 'The built dashboard serves those files directly from GitHub Pages.'],
+    },
   ]
 
   return (
     <section className="stack">
       <div className="panel">
-        <h2>Analysis Flow Diagram</h2>
-        <p>High-level path from installed-base records to ranked opportunities and playbook outputs.</p>
+        <div className="panel-heading">
+          <div>
+            <h2>Analysis Flow</h2>
+            <p>Installed-base records become ranked opportunities, recommendations, and export files.</p>
+          </div>
+        </div>
         <div className="block-flow">
-          {analysisFlow.map(([index, title, body]) => (
-            <article className="flow-card" key={title}>
-              <span className="flow-step-index">{index}</span>
-              <h3>{title}</h3>
-              <p>{body}</p>
+          {analysisFlow.map((step) => (
+            <article className="flow-card" key={step.title}>
+              <div className="flow-card__top">
+                <span className="flow-step-index">{step.number}</span>
+                <span className="flow-card__label">{step.label}</span>
+              </div>
+              <h3>{step.title}</h3>
+              <ul>
+                {step.bullets.map((bullet) => (
+                  <li key={bullet}>{bullet}</li>
+                ))}
+              </ul>
+              <span className="flow-code-note">{step.code}</span>
             </article>
           ))}
         </div>
       </div>
 
-      <div className="flow-summary-grid">
-        {supportPaths.map(([title, body]) => (
-          <article className="panel" key={title}>
-            <h3>{title}</h3>
-            <p>{body}</p>
+      <div className="flow-detail-grid">
+        {supportPaths.map((path) => (
+          <article className="panel flow-detail-panel" key={path.title}>
+            <h3>{path.title}</h3>
+            <ul className="flow-compact-list">
+              {path.items.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
           </article>
         ))}
       </div>
