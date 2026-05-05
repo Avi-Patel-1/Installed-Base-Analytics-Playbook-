@@ -13,7 +13,7 @@ import {
 import { generatePlaybook } from './playbook/generator'
 import { recommendationRules } from './recommendations/rules'
 import { scoreAccounts } from './scoring/scoring'
-import type { Account, Playbook, ScoredAccount, ScoreDetail } from './types'
+import type { Account, Playbook, PlaybookSection, ScoredAccount, ScoreDetail } from './types'
 import { accountsToCsv, parseAccountsCsv, sampleCsv } from './utils/csv'
 import { formatCompactCurrency, formatCurrency, formatPercent } from './utils/format'
 
@@ -504,6 +504,45 @@ function PlaybookGenerator({
   onSelect: (accountId: string) => void
   onEdit: (title: string, body: string) => void
 }) {
+  const sectionsByTitle = useMemo(
+    () =>
+      new Map(
+        sourcePlaybook.sections.map((section) => [
+          section.title,
+          playbook.sections.find((item) => item.title === section.title) ?? section,
+        ]),
+      ),
+    [playbook.sections, sourcePlaybook.sections],
+  )
+
+  const getSection = (title: string) => sectionsByTitle.get(title) ?? { title, body: '' }
+  const sectionGroups = [
+    {
+      label: '01',
+      title: 'Account Context',
+      description: 'What is happening at the site and why this account is worth a focused discussion.',
+      sections: ['Executive Summary', 'Account Snapshot', 'Likely Pain Points'],
+    },
+    {
+      label: '02',
+      title: 'Discovery Plan',
+      description: 'Questions and evidence that turn the account signal into a practical customer conversation.',
+      sections: ['Installed-Base Assumptions', 'Evidence Behind Recommendation', 'Discovery Questions', 'Data Needed From Customer'],
+    },
+    {
+      label: '03',
+      title: 'Engagement Path',
+      description: 'How to run the first workshop, shape the solution, and convert findings into next steps.',
+      sections: ['Recommended Workshop Agenda', 'Proposed Solution Architecture', 'Follow-Up Actions', 'Proposal Outline'],
+    },
+    {
+      label: '04',
+      title: 'Value and Risk',
+      description: 'Expected business case, likely objections, and controls that keep the engagement scoped.',
+      sections: ['Value Hypothesis', 'Potential Objections', 'Risk Mitigation Points'],
+    },
+  ]
+
   return (
     <section className="stack">
       <div className="panel playbook-toolbar">
@@ -529,24 +568,116 @@ function PlaybookGenerator({
         </div>
       </div>
 
-      <article className="panel playbook">
-        <div className="print-heading">
-          <p className="eyebrow">Customer Engagement Playbook</p>
-          <h2>{playbook.accountName}</h2>
-          <p>Generated {playbook.generatedOn}</p>
+      <article className="panel playbook playbook-readable">
+        <div className="print-heading playbook-hero">
+          <div>
+            <p className="eyebrow">Customer Engagement Playbook</p>
+            <h2>{playbook.accountName}</h2>
+            <p>
+              {scored.account.plantType} · {scored.account.industrySegment} · {scored.account.region}
+            </p>
+            <small>Generated {playbook.generatedOn}</small>
+          </div>
+          <ScorePill score={scored.technicalConsultingPriority.score} label={scored.technicalConsultingPriority.label} />
         </div>
-        {sourcePlaybook.sections.map((section) => (
-          <section key={section.title} className="playbook-section">
-            <h3>{section.title}</h3>
-            <textarea
-              value={playbook.sections.find((item) => item.title === section.title)?.body ?? section.body}
-              onChange={(event) => onEdit(section.title, event.target.value)}
-              rows={Math.max(4, section.body.split('\n').length + 2)}
-            />
+
+        <div className="playbook-kpi-grid">
+          <article>
+            <span>Opportunity type</span>
+            <strong>{scored.recommendedOpportunityType}</strong>
+          </article>
+          <article>
+            <span>Estimated opportunity</span>
+            <strong>{formatCurrency(scored.account.estimatedOpportunitySize)}</strong>
+          </article>
+          <article>
+            <span>Confidence</span>
+            <strong>{scored.confidenceLevel}</strong>
+            <small>{scored.account.installedBaseConfidence} installed-base confidence</small>
+          </article>
+          <article>
+            <span>Next action</span>
+            <strong>{scored.nextBestAction}</strong>
+          </article>
+        </div>
+
+        {sectionGroups.map((group) => (
+          <section className="playbook-section-group" key={group.title}>
+            <div className="playbook-group-heading">
+              <span>{group.label}</span>
+              <div>
+                <h3>{group.title}</h3>
+                <p>{group.description}</p>
+              </div>
+            </div>
+            <div className="playbook-card-grid">
+              {group.sections.map((title) => (
+                <EditablePlaybookSection key={title} section={getSection(title)} onEdit={onEdit} />
+              ))}
+            </div>
           </section>
         ))}
       </article>
     </section>
+  )
+}
+
+function EditablePlaybookSection({
+  section,
+  onEdit,
+}: {
+  section: PlaybookSection
+  onEdit: (title: string, body: string) => void
+}) {
+  return (
+    <section className="playbook-section-card">
+      <h4>{section.title}</h4>
+      <PlaybookBody body={section.body} />
+      <details className="playbook-edit">
+        <summary>Edit section text</summary>
+        <textarea
+          value={section.body}
+          onChange={(event) => onEdit(section.title, event.target.value)}
+          rows={Math.max(4, section.body.split('\n').length + 2)}
+        />
+      </details>
+    </section>
+  )
+}
+
+function PlaybookBody({ body }: { body: string }) {
+  const lines = body
+    .split('\n')
+    .map((line) => line.trim())
+    .filter(Boolean)
+
+  return (
+    <div className="playbook-body">
+      {lines.map((line, index) => {
+        const numbered = line.match(/^(\d+)\.\s+(.*)$/)
+        const bullet = line.match(/^-\s+(.*)$/)
+
+        if (numbered) {
+          return (
+            <div className="playbook-line" key={`${line}-${index}`}>
+              <span className="playbook-line-marker">{numbered[1]}</span>
+              <p>{numbered[2]}</p>
+            </div>
+          )
+        }
+
+        if (bullet) {
+          return (
+            <div className="playbook-line" key={`${line}-${index}`}>
+              <span className="playbook-line-marker">•</span>
+              <p>{bullet[1]}</p>
+            </div>
+          )
+        }
+
+        return <p key={`${line}-${index}`}>{line}</p>
+      })}
+    </div>
   )
 }
 
